@@ -1,26 +1,13 @@
 ---
 title: OpenAI悄悄地游说弱化人工智能法规，同时公开呼吁接受监管    
-
 description: 顺便说一下，该公司的游说努力获得了成功。
-
 date: 2023-07
-
 cover: https://helios-i.mashable.com/imagery/articles/07GtzfvWRj0Jr6GW7B2JYwY/hero-image.fill.size_1248x702.v1687283590.jpg
-
 categories:
-  -  技术
-  
-  
+  -  人工智能
 tags:
   -  人工智能
 ---  
-
-# OpenAI悄悄地游说弱化人工智能法规，同时公开呼吁接受监管  
-
-顺便说一下，该公司的游说努力成功了。  
-
-
-![](https://files.mdnice.com/user/45894/97386dc7-73a6-4e7b-b65f-1aeb4f4fc158.png)  
 
 OpenAI首席执行官萨姆-奥特曼（Sam Altman）在多次采访、活动中，甚至在[坐在美国国会面前](https://mashable.com/article/openai-ai-regulation)时，都非常大声地表示需要进行人工智能监管。
 
@@ -43,20 +30,13 @@ OpenAI首席执行官萨姆-奥特曼（Sam Altman）在多次采访、活动中
 ##  相关报道  
 
 - [ChatGPT、Google Bard制作免费的Windows 11密钥](https://mashable.com/article/chatgpt-bard-giving-free-windows-11-keys)  
-
 - [OpenAI更新GPT-4，增加新功能](https://mashable.com/article/openai-chatgpt-gpt-4-function-calling-update)  
-
 - [OpenAI呼吁对人工智能进行监管，这是在任何方向上迈出的坚实一步](https://mashable.com/article/openai-ai-regulation)  
-
 - [在抗议声中，Reddit试图迫使子版块重新开放 ](https://mashable.com/article/reddit-pressures-mods-reopen-subreddits-api-blackout-protest) 
-
 - [Reddit黑客威胁说，如果新的API政策向前推进，将发布被盗数据 ](https://mashable.com/article/reddit-blackcat-ransomware-demands-api-pricing)
 
- OpenAI游说反对的部分最终被从《人工智能法》的最终版本中删除。 
+OpenAI游说反对的部分最终被从《人工智能法》的最终版本中删除。 
 
 OpenAI成功的游说工作可能解释了奥特曼在谈到OpenAI在欧洲的业务时改变了主意。奥特曼此前曾威胁说（在新标签中打开）要因《人工智能法》而将OpenAI从欧盟撤出。然而，上个月，他改变了方向。奥特曼当时说（在新标签中打开），之前的《人工智能法》草案 "管制过严，但我们听说它将被收回。"
 
 现在，欧盟《人工智能法》的某些部分已经被 "拉回来"，OpenAI没有计划离开。
-
-**更多关于**[人工智能,](https://mashable.com/category/artificial-intelligence) [政治,](https://mashable.com/category/politics) [ChatGPT,](https://mashable.com/category/chatgpt) [OpenAI](https://mashable.com/category/openai)
-
