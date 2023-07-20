@@ -2,7 +2,7 @@
 title: 如何报名参加 Threads
 description: Threads现在可以在100多个国家的iOS和Android系统上下载。据称，在头七个小时内有1000万人注册。如果你想成为他们中的一员，这里介绍了是如何注册的。
 date: 2023-07-03 18:00:00
-cover: https://files.mdnice.com/user/45894/9ae69cd3-a7d5-4d81-bd62-aa24b544ab78.png
+cover: 
 categories:
   -  科技与技术
 tags:
