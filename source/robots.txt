@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://yinian.netlify.app/sitemap.xml
