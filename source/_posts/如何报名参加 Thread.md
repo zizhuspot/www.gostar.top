@@ -1,37 +1,15 @@
 ---
-title:  如何报名参加Threads   
-
+title: 如何报名参加 Thread
 description: 对于所有厌倦了鸟类应用程序的人来说。
-
-date: 2023-07
-
-cover: 
-
+date: 2023-07-03 18:00:00
+cover: https://files.mdnice.com/user/45894/9ae69cd3-a7d5-4d81-bd62-aa24b544ab78.png
 categories:
   -  科技与技术
-  
-  
-  
-  
-  
-  
 tags:
-  - 应用与软件  
-  
-  - 科学  
-  
+  - 应用与软件
+  - 科学
   - 技术
 ---  
-
-# 如何报名参加Threads  
-
-对于所有厌倦了鸟类应用程序的人来说。  
-
-
-![好吧，这个 "螺纹 "是什么东西，我怎样才能得到它？资料来源：Instagram
-](https://files.mdnice.com/user/45894/9ae69cd3-a7d5-4d81-bd62-aa24b544ab78.png)   
-
-[Threads，](https://mashable.com/article/threads-instagram-download)Meta对Twitter的回应，就在这里。
 
 [据Meta称](https://about.instagram.com/blog/announcements/threads-instagram-text-feature)，这个新的独立应用于7月6日推出，专门用于 "分享文本更新和加入公共对话"。这基本上是[Twitter](https://mashable.com/category/twitter)提供的服务，在其所有者兼首席执行官埃隆-马斯克（Elon Musk）接管之前，以及在[几个](https://mashable.com/article/twitter-force-visitors-login-view-tweets-profiles) [有问题的选择](https://mashable.com/article/twitter-free-version-unsuable)中，都不遗余力地将用户推向[付费的Twitter Blue订阅。](https://mashable.com/article/twitter-free-version-unsuable)
 
@@ -63,9 +41,7 @@ Threads现在可以在100多个国家的iOS和Android系统上下载。据称，
 
 ### 你需要的东西 
 
-你的iPhone或Android  
-
-和你的Instagram登录。  
+你的iPhone或Android和你的Instagram登录。  
 
 #### 第1步：下载Threads应用程序。
 
@@ -77,15 +53,11 @@ Threads现在可以在100多个国家的iOS和Android系统上下载。据称，
 
 ![](https://files.mdnice.com/user/45894/74d8f95e-70a0-4f36-9dd3-c1847828e0a9.jpg)
 
-
 #### 第3步：创建你的个人资料。
 
 在那里，你会被要求创建一个个人资料，包括一张照片，一个简历，并可选择添加链接。你也可以从Instagram导入你的信息，所以你目前的Instagram个人资料中的任何内容都会自动迁移到Threads。  
 
-
 ![](https://files.mdnice.com/user/45894/740fa5b1-b5f8-44a8-b3cd-404d33877441.jpg)
-
-
 
 #### 第4步：决定你希望你的个人资料是公开的还是私人的。
 
@@ -99,88 +71,11 @@ Threads现在可以在100多个国家的iOS和Android系统上下载。据称，
 
 你的账户现在已经准备好了。你可以浏览主页，关注更多账户，并发布你自己的主题。如果你的反馈充满了你不关注的账户，你可以用[这个指南改变设置](https://mashable.com/article/thread-people-you-follow-feed)。让我们看看这一切是如何进行的。
 
-
 ###  现在你已经注册了，Mashable有一些指南，可能会使你在Threads上的到来更顺利一些。   
 
 - [如何暂停线程上的通知](https://mashable.com/article/threads-stop-notifications)
-
-
-
 - [如何将你的Threads feed改成你真正关注的账户](https://mashable.com/article/thread-people-you-follow-feed)
-
-
-
 - [如何隐藏基于特定词汇的Threads回复](https://mashable.com/article/threads-how-to-hide-replies-custom-words)
-
-
-
-
-
 - [如何从欧盟解除对Threads的封锁](https://mashable.com/uk/deals/how-to-unblock-threads-for-free-from-eu)  
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 **更多关于**[Instagram,](https://mashable.com/category/instagram) [Meta](https://mashable.com/category/meta)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
