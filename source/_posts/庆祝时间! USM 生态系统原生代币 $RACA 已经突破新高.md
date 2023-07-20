@@ -10,9 +10,8 @@ tags:
   - 飙升
   - 庆祝时间
   - 价格
+cover: https://s2.loli.net/2023/07/01/ic6uJnxDqoO4Wha.webp
 ---
-
-<img src="https://s2.loli.net/2023/07/01/ic6uJnxDqoO4Wha.webp" style="display: block; margin: 0px auto; zoom: 80%;" />
 
 欢迎来到 BNBChain 上最大的元空间，在这里，边界只是一种幻觉! USM 是一个充满可能性的动力源，本周我们的原生代币 RACA 在加密货币市场上暴涨。💥
 
