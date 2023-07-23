@@ -11,8 +11,6 @@ description: 如何选择创业方向? 创业的条件是什么？如何判断�
 cover: 
 ---
 
-[![1690082847013.png](https://img1.imgtp.com/2023/07/23/bv789Mkn.png)](https://img1.imgtp.com/2023/07/23/bv789Mkn.png)
-
 ## 01 创始人，别无退路
 
 2023年，我们听到最多的一个词，就是“不确定性”。   
