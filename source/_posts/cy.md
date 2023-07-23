@@ -196,8 +196,6 @@ cover: [![1690083454845.png](https://img1.imgtp.com/2023/07/23/oEgN9yXL.png)](ht
 
 这是根本，做企业就要奔着这个本质去做。
 
-[![1690083254933.png](https://img1.imgtp.com/2023/07/23/9XIOUaMb.png)](https://img1.imgtp.com/2023/07/23/9XIOUaMb.png)
-
 ## 最后的话
 
 创业的路，是一条九死一生的路。
