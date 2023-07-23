@@ -8,7 +8,7 @@ tags:
   - 投资
   - 创业
 description: 如何选择创业方向? 创业的条件是什么？如何判断自己是否适合创业？创业过程中，总是会遇见很多困惑。
-cover: [![1690083454845.png](https://img1.imgtp.com/2023/07/23/oEgN9yXL.png)](https://img1.imgtp.com/2023/07/23/oEgN9yXL.png)
+cover: 
 ---
 
 [![1690082847013.png](https://img1.imgtp.com/2023/07/23/bv789Mkn.png)](https://img1.imgtp.com/2023/07/23/bv789Mkn.png)
