@@ -1,5 +1,5 @@
 ---
-title: JavaServer Pages简单教程
+title: JSP简单教程
 date: 2023-07-23 13:00:00
 categories:
   - 教程
@@ -7,7 +7,8 @@ tags:
   - 入门
   - 中级
   - 高级
-description: JavaServer Pages是一种基于Java的服务器端网页开发技术。它允许开发人员在HTML页面中嵌入Java代码，以生成动态网页内容。
+description: JSP简化了动态网页的开发,通过其组件化的特性,可以快速高效地开发数据库驱动的Web应用。它是很多Java Web项目的首选。
+cover: 
 
 # 图解JSP:动态网页技术详解
 
