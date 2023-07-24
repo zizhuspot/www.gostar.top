@@ -1,0 +1,138 @@
+---
+title: CCS简单教程
+date: 2023-07-18 20:00:00
+categories:
+  - 教程
+tags:
+  - 入门
+  - 中级
+  - 高级
+description: 简单向大家介绍CCS的基本用法
+cover: 
+---
+
+
+
+# 图解CSS:让网页变得更好看
+
+CSS是用于设置网页样式和布局的语言,利用CSS可以让网页更美观大方。
+
+## 什么是CSS
+
+- CSS全称是Cascading Style Sheets,层叠样式表。
+
+- CSS描述了HTML元素应该如何在屏幕、纸张等媒体上显示。
+
+- CSS保存为`.css`文件,然后应用到HTML文档中,来设置元素样式。
+
+- CSS的优点:
+
+  - 内容和样式分离,更易维护。
+
+  - 样式可以复用到多个页面。
+
+  - 可以对网页进行统一布局。
+
+## CSS语法
+
+CSS语法格式如下:
+
+```css
+选择器 {
+  属性1:值1;
+  属性2:值2;
+}
+```
+
+选择器指要设置样式的HTML元素,属性是要设置的样式,值是样式内容。
+
+例如,要设置所有`<p>`标签文本颜色为红色:
+
+```css
+p {
+  color: red; 
+}
+```
+
+## 如何使用CSS 
+
+主要有三种方式:
+
+- 内联样式:在HTML元素的`style`属性中设置
+
+  ```html
+  <p style="color: red;">This is red text</p>
+  ```
+
+- 内嵌样式:在HTML文件`<head>`中使用`<style>`标签包含CSS
+
+  ```html
+  <style>
+    p {
+      color: red;
+    } 
+  </style>
+  ```
+
+- 外部样式表:使用外部`.css`文件,在`<head>`中使用`<link>`标签链接
+
+  ```html
+  <link rel="stylesheet" href="styles.css">
+  ```
+
+推荐使用外部样式表,这样可以复用样式。
+
+## CSS示例
+
+利用CSS可以改变文字颜色:
+
+```css
+p {
+  color: blue;
+} 
+```
+
+改变背景:
+
+```css
+body {
+  background-color: #f2f2f2;
+}
+```
+
+设置字体:
+
+```css
+body {
+  font-family: Arial;
+}
+```
+
+居中对齐:
+
+```css
+p {
+  text-align: center;  
+}
+```
+
+设置图片边框:
+
+```css
+img {
+  border: 1px solid red;
+}
+```
+
+以上演示了CSS的一些常用功能。掌握这些可以让网页样式直接跃升一个台阶!
+
+## 总结
+
+本文对CSS进行了简明介绍,内容包括:
+
+- CSS的作用
+- CSS基本语法
+- 如何在HTML中使用CSS
+- 一些CSS使用示例
+
+希望这篇入门教程可以让大家对CSS有直观的了解,并开始运用CSS使自己的网页更好看!
