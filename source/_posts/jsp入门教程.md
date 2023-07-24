@@ -1,19 +1,17 @@
 ---
-title: CCS简单教程
-date: 2023-07-22 12:00:00
+title: jsp（JavaServer Pages）简单教程
+date: 2023-07-23 13:00:00
 categories:
   - 教程
 tags:
   - 入门
   - 中级
   - 高级
-description: 控制网页中的元素的格式，使网页更加绚丽多彩，比HTML更方便有效
-cover: 
----
+description: JSP（JavaServer Pages）是一种基于Java的服务器端网页开发技术。它允许开发人员在HTML页面中嵌入Java代码，以生成动态网页内容。
 
 # 图解JSP:动态网页技术详解
 
-JSP(Java Server Pages)是一种动态网页开发技术,它可以将Java代码插入HTML页面,实现动态内容。下面我就通过markdown格式,用简单的图文来介绍JSP的基本使用。
+JSP(Java Server Pages)是一种动态网页开发技术,它可以将Java代码插入HTML页面,实现动态内容。下面简单来介绍JSP的基本使用。
 
 ## JSP简介
 
@@ -94,7 +92,7 @@ JSP页面使用XML语法,主要元素包括:
 
 ## 总结
 
-本文通过markdown格式和示例对JSP进行了简要介绍,内容包括:
+本文通过对JSP进行了简要介绍,内容包括:
 
 - JSP的工作原理
 - JSP基本语法
