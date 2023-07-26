@@ -2,10 +2,10 @@
 title:  如何用Shopify创建你的网上商店
 date: 2023-07-25 12:28:00
 categories:
-  - 互联网
-tags:
   - web
-  - Shopify
+tags:
+  - 开发
+  - 编程
   - 电子商务
   - 服务平台
   - 应用

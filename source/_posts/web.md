@@ -2,10 +2,10 @@
 title:  Elastic Beanstalk的入门教程
 date: 2023-07-25 23:00:00
 categories:
-  - 互联网
-tags:
   - web
-  - Elastic Beanstalk
+tags:
+  - 开发
+  - 编程
   - 平台
   - 应用
   - 程序
