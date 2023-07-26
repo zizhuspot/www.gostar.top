@@ -122,7 +122,7 @@ HTML和CSS是一支团队。 HTML标签为元素提供意义,CSS选择器则针�
   `<p>`这是一个内部CSS样式嵌入HTML的示例。`</p>`
   <p class="highlight">.highlight类将用黄色背景使此文本突出显示。`</p>`
 `</body>`
-`</html>`
+ </html>
 ```
 
 ## 结合实践
