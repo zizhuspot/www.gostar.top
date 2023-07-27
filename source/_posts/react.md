@@ -12,6 +12,7 @@ tags:
   - 程序
 description: 掌握了React Router的使用,可以让我们更便捷地构建包含导航、动态渲染页面的React单页应用
 cover: 
+---
 
 ## React路由实战:创建可渲染动态内容的导航栏
 
@@ -39,7 +40,7 @@ React本身不包含路由功能。React Router是一个第三方库,可以为Re
 
 下面我们通过一个实例,学习如何使用React Router构建一个包含导航链接的React导航栏,点击不同的链接可以渲染不同的内容:
 
-- 步骤1:创建React应用
+### 步骤1:创建React应用
 
 使用`npx create-react-app my-app`命令可以快速创建一个React项目。
 
@@ -51,7 +52,7 @@ npm start
 
 这将创建一个名为my-app的项目,并启动开发服务器,我们可以在http://localhost:3000 地址看到 React的默认页面。
 
--  步骤2:安装 React Router
+###  步骤2:安装 React Router
 
 ```
 npm install react-router-dom
@@ -59,7 +60,7 @@ npm install react-router-dom
 
 这将安装react-router-dom库。
 
--  步骤3:配置路由
+###  步骤3:配置路由
 
 1. 在src/index.js中导入BrowserRouter组件,并使用它包裹App组件:
 
