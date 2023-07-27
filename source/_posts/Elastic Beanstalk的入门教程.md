@@ -1,5 +1,5 @@
 ---
-title:  Elastic Beanstalk的入门教程
+title: Elastic Beanstalk的入门教程
 date: 2023-07-25 23:00:00
 categories:
   - web
@@ -11,7 +11,6 @@ tags:
   - 程序
   - 服务
 description: AWS Elastic Beanstalk就是一个帮你快速部署应用的云平台服务,开发者无需操心基础设施即可上线应用。这极大地降低了应用部署和管理的学习成本。你只需关注应用代码本身,将底层基础架构交给Elastic Beanstalk自动配置。
-cover: 
 ---
 
 ## AWS Elastic Beanstalk:轻松实现应用托管和部署
@@ -34,9 +33,7 @@ AWS Elastic Beanstalk是一个完全托管的服务,可以轻松在AWS云中部�
 在开始之前,你需要准备环境。下面是先决条件:
 
 - AWS账号:如果你还没有,请注册一个AWS免费层账号。
-
 - AWS CLI:按照说明安装AWS命令行接口。
-
 - AWS Elastic Beanstalk CLI:按照说明安装Elastic Beanstalk命令行接口。
 
 ## 创建Elastic Beanstalk环境
@@ -67,7 +64,7 @@ global:
 
 为应用程序创建一个新目录并进入目录:
 
-```
+```sh
 mkdir eb-flask-app
 cd eb-flask-app
 ```
@@ -88,7 +85,7 @@ if __name__ == '__main__':
 
 创建一个名为requirements.txt的文件,添加以下内容:
 
-```
+```sh
 Flask==1.1.2
 ```
 
@@ -98,7 +95,7 @@ Flask==1.1.2
 
 现在应用程序准备就绪,我们将其部署到Elastic Beanstalk。首先,初始化Elastic Beanstalk环境:
 
-```
+```sh
 eb init
 ```
 
@@ -106,7 +103,7 @@ eb init
 
 创建一个环境并部署应用程序:
 
-```
+```sh
 eb create my-env
 ```
 
@@ -119,11 +116,8 @@ eb create my-env
 Elastic Beanstalk提供了几种管理和监控应用程序的工具。下面是一些常见任务:
 
 - 查看环境状态:`eb status`
-
 - 查看应用日志:`eb logs` 
-
 - 更新应用程序:做出代码更改,运行`eb deploy`部署更新版本
-
 - 监控应用程序:Elastic Beanstalk会自动监控应用程序并将指标发送到Amazon CloudWatch。可以在Elastic Beanstalk控制台或CloudWatch控制台中查看这些指标。
 
 ## 扩展应用程序
@@ -133,15 +127,10 @@ Elastic Beanstalk可以轻松扩展应用程序以处理增加的流量。可以
 要扩展应用程序,请执行以下步骤:
 
 1. 打开Elastic Beanstalk控制台。
-
 2. 选择应用程序和环境。
-
 3. 在“环境概述”部分,点击“配置”。
-
 4. 在“实例”部分,点击“修改”。
-
 5. 根据需要调整设置,比如实例类型、实例数量或扩展触发器。
-
 6. 点击“应用”保存更改。
 
 Elastic Beanstalk会自动使用新设置更新环境并相应地扩展应用程序。
@@ -151,11 +140,8 @@ Elastic Beanstalk会自动使用新设置更新环境并相应地扩展应用程
 选择适合应用程序的实例类型对于成本优化至关重要。分析应用程序的需求,选择提供必要资源而不过度配置的实例类型:
 
 - 比较不同实例类型及其定价。
-
 - 考虑对可变工作负载使用突增型实例(T2、T3)。
-
 - 对内存密集型应用使用内存优化型实例(R系列)。
-
 - 对计算密集型应用使用计算优化型实例(C系列)。
 
 ## 总结

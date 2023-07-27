@@ -1,5 +1,5 @@
 ---
-title:  html和css两者的主要区别是什么
+title: html和css两者的主要区别是什么
 date: 2023-07-25 23:00:00
 categories:
   - web
@@ -11,7 +11,6 @@ tags:
   - 程序
   - 服务
 description: 在本文中,我们将深入研究HTML和CSS各自的角色,检查它们互补的本质,并突出它们在Web开发领域的重要性。
-cover: 
 ---
 
 ## HTML与CSS简介
@@ -89,14 +88,14 @@ HTML和CSS是一支团队。 HTML标签为元素提供意义,CSS选择器则针�
 </html>
 ```
 
-内部样式在HTML页面的部分中定义:`<style>`<head>``
+内部样式在HTML页面的部分中定义:`<style>` `<head>`
 
 ```html
-`<!DOCTYPE html>`
-`<html>`
-`<head>`
-  `<title>`内部CSS示例`</title>`
-  `<style>`
+<!DOCTYPE html>
+<html>
+<head>
+  <title>内部CSS示例</title>
+  <style>
     body {
       font-family: Roboto, sans-serif;
       background-color: #f2f2f2;
@@ -114,14 +113,14 @@ HTML和CSS是一支团队。 HTML标签为元素提供意义,CSS选择器则针�
     .highlight {
       background-color: yellow;
     }
-  `</style>`
-`</head>`
+  </style>
+</head>
 
-`<body>
-  `<h1>`欢迎来到我的网站`</h1>
-  `<p>`这是一个内部CSS样式嵌入HTML的示例。`</p>`
-  <p class="highlight">.highlight类将用黄色背景使此文本突出显示。`</p>`
-`</body>`
+<body>
+  <h1>欢迎来到我的网站</h1>
+  <p>这是一个内部CSS样式嵌入HTML的示例。</p>
+  <p class="highlight">.highlight类将用黄色背景使此文本突出显示。</p>
+</body>
  </html>
 ```
 
@@ -130,11 +129,8 @@ HTML和CSS是一支团队。 HTML标签为元素提供意义,CSS选择器则针�
 要充分发挥HTML和CSS的作用,请坚持推荐的做法,以促进干净、高效和可维护的代码。
 
 - 编写HTML时,使用适当的缩进、语义标签和有意义的类和ID名称非常重要。
-
 - 避免在HTML元素中进行不必要的嵌套,并努力保持标记的简单性和清晰性。
-
 - 优化CSS以减少冗余,方法是高效地使用选择器、分组相似的样式并有效地利用继承和层叠。
-
 - 最小化和压缩CSS文件也可以加快网站加载速度,从而改善用户体验。
 
 ## 结论

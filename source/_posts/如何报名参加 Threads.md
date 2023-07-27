@@ -65,10 +65,3 @@ Threads现在可以在100多个国家的iOS和Android系统上下载。据称，
 #### 第6步：开始探索!
 
 你的账户现在已经准备好了。你可以浏览主页，关注更多账户，并发布你自己的主题。如果你的反馈充满了你不关注的账户，你可以用[这个指南改变设置](https://mashable.com/article/thread-people-you-follow-feed)。让我们看看这一切是如何进行的。
-
-###  现在你已经注册了，Mashable有一些指南，可能会使你在Threads上的到来更顺利一些。   
-
-- [如何暂停线程上的通知](https://mashable.com/article/threads-stop-notifications)
-- [如何将你的Threads feed改成你真正关注的账户](https://mashable.com/article/thread-people-you-follow-feed)
-- [如何隐藏基于特定词汇的Threads回复](https://mashable.com/article/threads-how-to-hide-replies-custom-words)
-- [如何从欧盟解除对Threads的封锁](https://mashable.com/uk/deals/how-to-unblock-threads-for-free-from-eu)  

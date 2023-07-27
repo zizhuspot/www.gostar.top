@@ -1,7 +1,7 @@
 ---
 title: OpenAI悄悄地游说弱化人工智能法规，同时公开呼吁接受监管    
 description: 顺便说一下，该公司的游说努力获得了成功。
-date: 2023-07
+date: 2023-07-23 14:00:00
 cover: https://helios-i.mashable.com/imagery/articles/07GtzfvWRj0Jr6GW7B2JYwY/hero-image.fill.size_1248x702.v1687283590.jpg
 categories:
   -  人工智能
