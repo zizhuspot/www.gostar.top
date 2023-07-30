@@ -11,6 +11,7 @@ tags:
   - 应用
   - 程序
 description: Shoplaza是一个易于使用的电子商务平台,适合想要网上销售的企业和个人。它非常适合各种规模的企业,从小型家庭企业到大型企业。
+cover: https://www.contentgrip.com/content/images/size/w2000/2022/01/shoplazza-logo.jpg
 ---
 
 如果您从事电子商务可能面临两种情况之一。要么你最近决定开始一个网上商店,要么你已经拥有一个网上商店,但对其当前设置不满意,正在寻找新的解决方案。

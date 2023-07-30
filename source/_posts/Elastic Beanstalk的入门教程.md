@@ -11,6 +11,7 @@ tags:
   - 程序
   - 服务
 description: AWS Elastic Beanstalk就是一个帮你快速部署应用的云平台服务,开发者无需操心基础设施即可上线应用。这极大地降低了应用部署和管理的学习成本。你只需关注应用代码本身,将底层基础架构交给Elastic Beanstalk自动配置。
+cover: https://codesandchips.files.wordpress.com/2022/03/aws-elastic-beanstalk.jpg
 ---
 
 ## AWS Elastic Beanstalk:轻松实现应用托管和部署
