@@ -11,7 +11,7 @@ tags:
   - 应用
   - 程序
 description: 掌握了React Router的使用,可以让我们更便捷地构建包含导航、动态渲染页面的React单页应用
-cover: https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/20278ff02f5c4e338c31d72bbab653ac~tplv-k3u1fbpfcp-zoom-in-crop-mark:4536:0:0:0.awebp
+cover: https://miro.medium.com/v2/resize:fit:1400/format:webp/1*vHHBwcUFUaHWXntSnqKdCA.png
 ---
 
 对于React新手来说,创建一个可渲染不同内容的导航栏是一个具有挑战性的任务。React以构建单页应用而闻名,但它本身不包含任何路由功能。不过,React的路由可以通过一个名为react-router-dom的第三方库来实现。本文的目标是使用React构建一个导航栏,这个导航栏包含不同的内部链接,点击后可以渲染不同的内容。
