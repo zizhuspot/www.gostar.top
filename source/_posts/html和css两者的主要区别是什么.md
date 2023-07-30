@@ -11,6 +11,7 @@ tags:
   - 程序
   - 服务
 description: 在本文中,我们将深入研究HTML和CSS各自的角色,检查它们互补的本质,并突出它们在Web开发领域的重要性。
+cover: https://scontent-hkt1-1.xx.fbcdn.net/v/t1.6435-9/183056435_1687570708117124_4542630565247756730_n.png?_nc_cat=109&cb=99be929b-3346023f&ccb=1-7&_nc_sid=8631f5&_nc_ohc=Dy9Pe5fmDsMAX8tR0bY&_nc_ht=scontent-hkt1-1.xx&oh=00_AfAh62ZuXdznf0p7icVyr-JEw38XSJg48usGOrQpglIS8A&oe=64ED3E88
 ---
 
 ## HTML与CSS简介

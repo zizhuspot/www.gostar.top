@@ -9,6 +9,7 @@ tags:
   - 高级
   - python
 description: 通过简单的图文来帮大家快速了解如何开始使用Python。让我们一起开启编程之旅吧!
+cover: https://www.analyticsinsight.net/wp-content/uploads/2022/03/Python-Remains-at-the-Top-Despite-the-Intro-of-New-Coding-Langs.jpg
 ---
 
 ## python简介

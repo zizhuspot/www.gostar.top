@@ -9,6 +9,7 @@ tags:
   - 高级
   - jsp
 description: JSP简化了动态网页的开发,通过其组件化的特性,可以快速高效地开发数据库驱动的Web应用。它是很多Java Web项目的首选。
+cover: https://beingfayanvideo.files.wordpress.com/2019/09/images49.jpg
 ---
 
 ## 什么是Java Server Pages?

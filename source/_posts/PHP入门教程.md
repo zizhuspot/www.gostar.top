@@ -9,6 +9,7 @@ tags:
   - 高级
   - php
 description: PHP是一种广泛使用的服务器端脚本语言，用于开发动态网页和Web应用程序。
+cover: https://www.techopedia.com/wp-content/uploads/2023/02/brochure-flyer-paper-poster-logo-trademark-text-building-office-buildi-3.jpg
 ---
 
 PHP是一门非常适合刚开始学习编程的语言,本文将以中等难度介绍PHP的基本语法和开发环境,帮助大家掌握PHP编程的基础。

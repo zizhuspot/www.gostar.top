@@ -1,6 +1,6 @@
 ---
 title: 如何报名参加 Threads
-description: Threads现在可以在100多个国家的iOS和Android系统上下载。据称，在头七个小时内有1000万人注册。如果你想成为他们中的一员，这里介绍了是如何注册的。
+
 date: 2023-07-03 18:00:00
 categories:
   - 互联网
@@ -8,6 +8,9 @@ tags:
   - 应用与软件
   - 科学
   - 技术
+description: Threads现在可以在100多个国家的iOS和Android系统上下载。据称，在头七个小时内有1000万人注册。如果你想成为他们中的一员，这里介绍了是如何注册的。 
+cover: https://www.raconteur.net/wp-content/uploads/2023/07/Web-images-Mar-2022-7.jpg
+
 ---  
 
 [据Meta称](https://about.instagram.com/blog/announcements/threads-instagram-text-feature)，这个新的独立应用于7月6日推出，专门用于 "分享文本更新和加入公共对话"。这基本上是[Twitter](https://mashable.com/category/twitter)提供的服务，在其所有者兼首席执行官埃隆-马斯克（Elon Musk）接管之前，以及在[几个](https://mashable.com/article/twitter-force-visitors-login-view-tweets-profiles) [有问题的选择](https://mashable.com/article/twitter-free-version-unsuable)中，都不遗余力地将用户推向[付费的Twitter Blue订阅。](https://mashable.com/article/twitter-free-version-unsuable)

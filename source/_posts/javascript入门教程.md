@@ -9,6 +9,7 @@ tags:
   - 高级
   - JavaScript
 description: JSP简化了动态网页的开发,通过其组件化的特性,可以快速高效地开发数据库驱动的Web应用。它是很多Java Web项目的首选。
+cover: https://www.geekboots.com/_next/image?url=https%3A%2F%2Fcdn.geekboots.com%2Fgeek%2Fjavascript-hero-1652702096795.webp&w=2048&q=75
 ---
 
 JavaScript是一门非常基础和重要的编程语言,对于Website的交互功能都需要依赖它。本教程将通过简单的图文向JavaScript初学者介绍基本语法和使用方法,让大家快速上手。

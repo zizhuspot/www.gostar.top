@@ -9,6 +9,7 @@ tags:
   - 高级
   - html
 description: 简单向大家介绍HTML的基本用法
+cover: https://www.freecodecamp.org/news/content/images/size/w2000/2023/03/HTML-Blog-Cover-1.png
 ---
 
 HTML是构建网站的基础,如果你想搭建自己的网页,学习HTML是必不可少的。今天简单向大家介绍HTML的基本用法。
