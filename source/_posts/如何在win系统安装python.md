@@ -1,5 +1,5 @@
 ---
-title: 安装指南:在windows系统上安装pyhton
+title: 安装指南:在win11系统上安装pyhton
 date: 2023-07-31 16:28:00
 categories:
   - web
@@ -11,7 +11,7 @@ tags:
   - 程序
   - 服务
 description: 本方法也适用于其他Windows版本,不过这里将以Windows 11为例进行演示。
-cover: 
+cover: https://www.meiqiantu.com/wp-content/uploads/2023/01/20230131-v1swv_.jpeg
 ---
 
 > 为了确保Python程序在Windows系统上正确执行，必须验证Python是否正确安装并添加到环境变量中。本指南将概述确认系统上是否存在 Python 的步骤，并提供在 Windows 上安装 Python 的详细说明。
