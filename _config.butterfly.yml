@@ -46,7 +46,7 @@ favicon: https://cdn.jsdelivr.net/gh/youngjuning/images@main/1689511527252.png
 
 # Avatar (頭像)
 avatar:
-  img: https://smms.app/image/dvxAe4X3U81huBp
+  img: <a href="https://smms.app/image/dvxAe4X3U81huBp" target="_blank"><img src="https://s2.loli.net/2023/07/31/dvxAe4X3U81huBp.png" ></a>
   effect: true
 
 # Disable all banner image
