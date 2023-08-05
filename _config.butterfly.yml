@@ -46,7 +46,7 @@ favicon: https://cdn.jsdelivr.net/gh/youngjuning/images@main/1689511527252.png
 
 # Avatar (頭像)
 avatar:
-  img: /yinian/images/header.jpg
+  url: /images/header.jpg
   effect: true
 
 # Disable all banner image
