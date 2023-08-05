@@ -46,7 +46,7 @@ favicon: https://cdn.jsdelivr.net/gh/youngjuning/images@main/1689511527252.png
 
 # Avatar (頭像)
 avatar:
-  img: https://cdn.jsdelivr.net/gh/youngjuning/images@main/1689511527252.png
+  img: /images/屏幕截图 2023-07-31 211822.png
   effect: true
 
 # Disable all banner image
