@@ -117,5 +117,7 @@ cover: https://www.meiqiantu.com/wp-content/uploads/2023/01/20230131-v1swv_.jpeg
 
 ![](https://s2.loli.net/2023/07/31/Oex6UmDJrHiE2SK.png)
 
-## 按照上述步骤操作，您现在已在计算机上安装了 Python。您现在可以选择任何适合Python的IDE，并开始编写和执行Python代码。
+## 结语
+
+按照上述步骤操作，您现在已在计算机上安装了 Python。您现在可以选择任何适合Python的IDE，并开始编写和执行Python代码。
 
