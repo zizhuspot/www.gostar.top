@@ -12,7 +12,7 @@ tags:
   - 数字艺术
   - 智能法律
   - AI艺术
-description: 实用国产AI工具大盘点
+description: ChatGPT的出现,无疑是人工智能发展进程中的一个里程碑。它犹如一个聪明绝顶的机器助手,能够流畅地使用语言进行交流,并完成诸如写作创作等高层次任务结果被AI轻松拿下，似乎ChatGPT无所不能，ChatGPT的爆红无疑打开了人工智能新时代的大门
 cover: https://tse3-mm.cn.bing.net/th/id/OIP-C.L_5vukftkSPdzLEfrzEw0QHaEK?pid=ImgDet&rs=1
 ---
 
@@ -244,4 +244,3 @@ Transmart可广泛应用于:
 ## 总结
 
 这些国产AI工具在各自领域都有出色表现,部分工具还开放了API接口或提供SDK集成,开发者可以直接用于产品中。正确使用AI将使工作效率达到新的高度。希望在2023年能给大家的工作和生活带来帮助,觉得有帮助的记得点赞收藏，下期再见！
-
