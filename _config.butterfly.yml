@@ -3,7 +3,7 @@
 # --------------------------------------
 
 nav:
-  logo: https://smms.app/image/EUKXxN3poDjQlId # image
+  logo: https://s2.loli.net/2023/08/10/EUKXxN3poDjQlId.png # image
   display_title: true
   fixed: false # fixed navigation bar
 
@@ -42,11 +42,11 @@ social:
 # --------------------------------------
 
 # Favicon（網站圖標）
-favicon: https://smms.app/image/EUKXxN3poDjQlId
+favicon: https://s2.loli.net/2023/08/10/EUKXxN3poDjQlId.png
 
 # Avatar (頭像)
 avatar:
-  img: https://smms.app/image/EUKXxN3poDjQlId
+  img: https://s2.loli.net/2023/08/10/EUKXxN3poDjQlId.png
   effect: true
 
 # Disable all banner image
