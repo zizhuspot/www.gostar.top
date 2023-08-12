@@ -20,6 +20,6 @@ date: 2023-08-12 15:54:03
 如果您有任何问题或建议，请随时与我联系。您可以通过以下方式找到我：
 
 - 电子邮件：[nang52088@gmail.com]
-- 社交媒体：[Twitter:@PirlosM]
+- 社交媒体：[Twitter](https://twitter.com/PirlosM)
 
 感谢您访问我的网站！
