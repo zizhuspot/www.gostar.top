@@ -2,14 +2,14 @@
 title:  使用React Native开发跨平台移动应用完全指南
 date: 2023-08-01 20:28:00
 categories:
-  - web
+  - 语言驿站
 tags:
   - 开发
   - 编程
-  - 电子商务
-  - 服务平台
-  - 应用
-  - 程序
+  - React Native
+  - ios
+  - 移动应用
+  - Android
 description: 跨平台应用开发一直是app开发者梦寐以求的方向。本文将详细介绍如何使用React Native开发跨平台APP,让你快速上手这项强大的技术。
 cover: https://www.hammermarketing.com/wp-content/uploads/sites/2/2020/11/react-native_large.jpg?resize=1200,630
 ---                                                                                          

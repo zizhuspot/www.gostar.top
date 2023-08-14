@@ -2,14 +2,14 @@
 title: 如何用Shoplaza创建你的网上商店
 date: 2023-07-25 12:28:00
 categories:
-  - web
+  - 电子商务
 tags:
-  - 开发
-  - 编程
+  - Shoplaza
+  - 易于使用
   - 电子商务
   - 服务平台
-  - 应用
-  - 程序
+  - 简单
+  - 管理
 description: Shoplaza是一个易于使用的电子商务平台,适合想要网上销售的企业和个人。它非常适合各种规模的企业,从小型家庭企业到大型企业。
 cover: https://www.contentgrip.com/content/images/size/w2000/2022/01/shoplazza-logo.jpg
 ---

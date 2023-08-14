@@ -2,7 +2,7 @@
 title: 安装指南:在win11系统上安装pyhton
 date: 2023-07-31 16:28:00
 categories:
-  - web
+  - 语言驿站
 tags:
   - 编程
   - 开发

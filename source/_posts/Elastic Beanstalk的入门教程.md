@@ -2,14 +2,14 @@
 title: Elastic Beanstalk的入门教程
 date: 2023-07-25 23:00:00
 categories:
-  - web
+  - 教程花园
 tags:
-  - 开发
+  - Elastic Beanstalk
   - 编程
-  - 平台
-  - 应用
-  - 程序
-  - 服务
+  - 成本优化
+  - 应用托管
+  - 管理
+  - 自动配置
 description: AWS Elastic Beanstalk就是一个帮你快速部署应用的云平台服务,开发者无需操心基础设施即可上线应用。这极大地降低了应用部署和管理的学习成本。你只需关注应用代码本身,将底层基础架构交给Elastic Beanstalk自动配置。
 cover: https://codesandchips.files.wordpress.com/2022/03/aws-elastic-beanstalk.jpg
 ---

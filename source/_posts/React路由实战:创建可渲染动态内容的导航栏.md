@@ -2,12 +2,12 @@
 title: React路由实战:创建可渲染动态内容的导航栏
 date: 2023-07-26 21:28:00
 categories:
-  - web
+  - 语言驿站
 tags:
   - 开发
   - 编程
-  - 电子商务
-  - 服务平台
+  - JavaScript库
+  - React
   - 应用
   - 程序
 description: 掌握了React Router的使用,可以让我们更便捷地构建包含导航、动态渲染页面的React单页应用
@@ -18,7 +18,7 @@ cover: https://miro.medium.com/v2/resize:fit:1400/format:webp/1*vHHBwcUFUaHWXntS
 
 为了在构建这个导航栏的过程中加深理解,我们先来看看以下几个相关概念:
 
-## React简介
+## 简介
 
 React也称为ReactJS,是一个用于构建用户界面(UI)的JavaScript库。它可以构建单页应用,也可以构建移动应用(使用React Native)。React的特点是采用组件化和声明式编码风格,使UI代码的逻辑更加清晰,组件更加容易复用。
 

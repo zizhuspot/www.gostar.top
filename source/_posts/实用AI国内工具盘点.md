@@ -2,7 +2,7 @@
 title: 别只关注ChatGPT，国产AI也很实用，方便快捷
 date: 2023-08-06 09:28:00
 categories:
-  - AI智能导航
+  - AI导航
 tags:
   - AI写作
   - AI办公

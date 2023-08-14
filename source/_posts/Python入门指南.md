@@ -2,7 +2,7 @@
 title: Python入门指南
 date: 2023-07-22 18:00:00
 categories:
-  - 教程
+  - 教程花园
 tags:
   - 入门
   - 中级

@@ -2,7 +2,7 @@
 title: CSS入门教程
 date: 2023-07-19 21:00:00
 categories:
-  - 教程
+  - 教程花园
 tags:
   - 入门
   - 中级

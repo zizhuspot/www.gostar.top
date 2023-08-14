@@ -2,7 +2,7 @@
 title: JavaScript 入门教程
 date: 2023-07-24 13:28:00
 categories:
-  - 教程
+  - 教程花园
 tags:
   - 入门
   - 中级
