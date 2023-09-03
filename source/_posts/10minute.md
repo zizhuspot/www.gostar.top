@@ -7,7 +7,8 @@ tags:
   - Chrome扩展
   - 实用扩展
   - Google Chrome
-  - 10分钟创建
+  - Manifest V3
+  - Manifest V2
 description: 您是否曾经考虑过构建自己的Chrome扩展程序，但认为该过程可能太复杂了？好吧，你会大吃一惊！在接下来的几分钟里，我们不仅会介绍Chrome扩展程序的基础知识，还会指导您完成五个简单的步骤来制作自己的扩展程序。
 cover: https://pic1.zhimg.com/v2-756c8bf87f9c43506547aa66b1529db9_720w.jpg?source=172ae18b
 ---
