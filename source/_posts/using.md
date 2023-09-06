@@ -1,6 +1,6 @@
 ---
 title: TypeScript中使用using语句实现更简单的资源管理
-date: 2023-09-06 09:28:00
+date: 2023-09-06 10:28:00
 categories:
   - 语言驿站
 tags:
@@ -9,6 +9,7 @@ tags:
   - 资源管理
 description: 合理的资源管理对开发高质量、可维护的应用程序极为重要。TypeScript 5.2中新增的using语句提供了更简单方便的资源管理方式。
 cover: https://miro.medium.com/max/1200/1*zbYWWzFqY2ywsCUpY0jMxA.png
+---
 
 ## TypeScript中的using语句
 
