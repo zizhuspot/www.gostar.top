@@ -1,5 +1,5 @@
 ---
-title:  TypeScript中使用using语句实现更简单的资源管理
+title: TypeScript中使用using语句实现更简单的资源管理
 date: 2023-09-06 09:28:00
 categories:
   - 语言驿站
