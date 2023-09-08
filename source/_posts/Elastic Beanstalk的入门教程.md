@@ -14,19 +14,17 @@ description: AWS Elastic Beanstalk就是一个帮你快速部署应用的云平�
 cover: https://codesandchips.files.wordpress.com/2022/03/aws-elastic-beanstalk.jpg
 ---
 
-## AWS Elastic Beanstalk:轻松实现应用托管和部署
-
-随着业务快速发展,应用的部署和管理成为了后端工程师的一大挑战。为了专注于应用开发与创新,将基础设施这一重复性劳动交给专业的云服务似乎成为趋势。本文将为大家介绍AWS中的Elastic Beanstalk服务,这是一个帮助快速部署和管理应用的平台即服务产品。
-
-## AWS Elastic Beanstalk入门教程
-
-本教程将介绍AWS Elastic Beanstalk的基础知识,这是亚马逊网络服务提供的一个平台即服务产品。我们将学习如何使用Elastic Beanstalk来部署、管理和扩展应用程序。
+> 本教程将介绍AWS Elastic Beanstalk的基础知识,这是亚马逊网络服务提供的一个平台即服务产品。我们将学习如何使用Elastic Beanstalk来部署、管理和扩展应用程序。
 
 ## AWS Elastic Beanstalk简介
 
 AWS Elastic Beanstalk是一个完全托管的服务,可以轻松在AWS云中部署、管理和扩展应用程序。它支持各种编程语言和平台,包括Java、.NET、PHP、Node.js、Python、Ruby、Go和Docker。
 
 使用Elastic Beanstalk,你可以专注于编写代码,让该服务处理部署、扩展、监控和维护应用程序。Elastic Beanstalk会自动配置应用程序所需的资源,比如EC2实例、负载均衡器和数据库。
+
+## AWS Elastic Beanstalk:轻松实现应用托管和部署
+
+随着业务快速发展,应用的部署和管理成为了后端工程师的一大挑战。为了专注于应用开发与创新,将基础设施这一重复性劳动交给专业的云服务似乎成为趋势。本文将为大家介绍AWS中的Elastic Beanstalk服务,这是一个帮助快速部署和管理应用的平台即服务产品。
 
 
 ## 准备 Beanstalk 环境
