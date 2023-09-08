@@ -15,7 +15,7 @@ cover: https://images5.alphacoders.com/430/430890.jpg
 
 ## C++基础
 
-C++发展自C语言,是一门面向对象的程序设计语言,兼具高级语言和低级语言的优点。C++拥有函数、类、封装、继承、多态等面向对象特性,也可以进行系统级编程。
+C++是一种通用的编程语言,由Bjarne Stroustrup于1979年在C语言基础上设计开发。C++发展自C语言,是一门面向对象的程序设计语言,兼具高级语言和低级语言的优点。C++拥有函数、类、封装、继承、多态等面向对象特性,也可以进行系统级编程。
 
 要开始C++编程,你需要一个代码编辑器,比如Visual Studio、Visual Studio Code等,也可以使用记事本编写代码。接下来我们用一个简单的“Hello World”程序展示C++的基本语法结构:
 
@@ -32,132 +32,219 @@ int main() { // 主函数
 
 这个简单的程序演示了`#include`包含头文件、`main()`主函数、`cout`进行输出的用法。编译并运行后,程序将输出"Hello World!"。
 
-## 数据类型
+## C++特点
 
-C++有各种基本数据类型,用于表示不同类型的数据:
+- 面向对象:提供类、封装、继承等特性
+- 过程化:保留了C语言中的过程化编程功能
+- 混合编程:支持面向对象编程和过程化编程
+- 性能高效:编译执行效率高,可用于开发性能敏感应用
+- 编译型语言:代码需先编译后执行
 
-- `int`:整数类型 
+## C++基础语法
 
-- `float`:浮点数类型 
+### 变量和数据类型
 
-- `double`:高精度浮点数类型
-
-- `char`:字符类型
-
-- `bool`:布尔类型 true/false
-
-- `string`:字符串类型
-
-定义变量时需要指定类型,例如:
+C++支持基础类型:
 
 ```cpp
-int age = 25; 
-double price = 20.5;
-bool flag = true; 
+int a = 10; // 整型
+double b = 3.14; // 浮点型
+bool c = true; // 布尔型
+char d = 'A'; // 字符型
 ```
 
-## 流程控制
+### 运算符
 
-C++使用条件判断和循环来控制代码执行流程:
+C++支持算术、赋值、比较、逻辑等运算符:
 
 ```cpp
-// if条件判断
-if (age > 18) {
-  cout << "成年";
+int sum = a + b; // 算术运算符
+a += 2; // 赋值运算符
+a == b; // 比较运算符
+!(a && b); // 逻辑运算符
+```
+
+### 流程控制
+
+if语句、循环:
+
+```cpp
+if (a > b) {
+  // todo
+} else if {
+  // todo 
 } else {
-  cout << "未成年"; 
+  // todo
 }
 
-// for循环
 for (int i=0; i<10; i++) {
-  cout << i << endl;
+  // todo
 }
 ```
 
-`if`语句和`for`循环根据条件执行不同代码,实现了代码逻辑控制。
+##  C++面向对象编程
 
-## 函数
+### 类和对象
 
-C++使用函数将代码封装成模块,提高复用性:
+定义类:
 
 ```cpp
-// 定义函数
+class Person {
+public:
+  string name; 
+  int age;
+  
+  void printInfo() {
+    // todo
+  }
+};
+``` 
+
+创建对象:
+
+```cpp
+Person p1; 
+p1.name = "John";
+p1.age = 20;
+```
+
+访问成员通过`.`运算符。
+
+### 封装、继承、多态
+
+封装通过public/private修饰符控制访问;
+
+继承通过`: public`实现继承;
+
+多态通过虚函数实现。
+
+## C++数组和字符串
+
+定义数组: 
+
+```cpp
+int nums[10]; 
+
+string strs[2] = {"hello","world"};
+```
+
+字符串常见操作:
+
+```cpp
+string s = "hello";
+
+s.size(); // 长度
+s.find("lo"); // 查找
+s.substr(2,3); // 截取字符串
+```
+
+##  C++函数
+
+定义函数:
+
+```cpp
 int add(int a, int b) {
   return a + b;
 }
-
-// 调用函数
-int sum = add(1, 2); // 输出结果为3
 ```
 
-定义有返回值的函数,然后调用该函数使用其功能。
-
-## 类和对象 
-
-C++面向对象的主要实现是类和对象。类是对象的抽象,对象是类的具体实例。
+内联函数:
 
 ```cpp 
-// 定义类 
-class Person {
-  public:
-    string name;
-    int age;
-    
-    void print() {
-      cout << name << " " << age << endl;   
-    }
-};
-
-// 创建对象
-Person p1;
-p1.name = "张三";
-p1.age = 20;
-p1.print(); 
+inline int add(int a, int b) {
+  return a + b; 
+}
 ```
 
-`class`定义类,`public`表示公有属性和方法。创建`Person`对象然后访问其属性和方法。
+##  C++模板
 
-## 构造函数
-
-构造函数是一种特殊的成员函数,在创建对象时调用,用于初始化对象:
+函数模板:
 
 ```cpp
-class Person {
-  public:
-    Person(string n, int a) {
-      name = n;
-      age = a;
-    }  
-};
-
-Person p1("李四", 18);
+template <typename T>
+T min(T a, T b) {
+  return a < b ? a : b; 
+}
 ```
 
-构造函数名称与类名相同,可以重载。
+类模板:
+
+```cpp
+template <class T>
+class Stack {
+  // 栈实现 
+};
+```
+
+## C++异常
+
+异常处理:
+
+```cpp
+try {
+  // 可能抛异常的代码
+} catch (Exception e) {
+  // 处理异常
+}
+``` 
+
+抛出异常:
+
+```cpp
+throw Exception("Error occurred"); 
+```
+
+## C++文件操作
+
+输出到文件:
+
+```cpp
+ofstream f("test.txt");
+f << "Hello World";
+f.close();
+```
+
+从文件输入:
+
+```cpp
+ifstream f("test.txt");
+string line;
+while(getline(f, line)) {
+  cout << line << endl;
+}
+f.close();
+```
+
+## C++ STL
+
+Vector动态数组:
+
+```cpp
+vector<int> vec;
+vec.push_back(1);
+vec.size();
+```
+
+List链表:
+
+```cpp
+list<string> mylist;
+mylist.push_back("a");
+mylist.pop_front();
+```
+
+Map字典:
+
+```cpp 
+map<string, int> dict;
+dict["key"] = 1;
+dict["key"]; // 访问元素
+```
+
+
 
 ![](https://s2.loli.net/2023/08/11/DnlOgs94Fe5rdUM.png)
 
-## 主要特点:
-
-1. 面向对象编程 - C++拥有类、封装、继承、多态等面向对象特性,支持面向对象编程。
-
-2. 函数重载 - C++支持函数重载,可以定义多个同名函数,根据参数类型和数量不同来区分。
-
-3. 构造和析构 - C++使用构造函数初始化对象,析构函数销毁对象,实现RAII资源管理。
-
-4. 引用传参 - C++支持引用传参,避免复制开销,也可以实现输出参数。
-
-5. 智能指针 - C++11提供智能指针功能,简化内存管理,防止内存泄漏。
-
-6. STL库 - C++标准库提供强大的容器和算法,提高编程效率。
-
-7. 泛型编程 - 泛型编程可以编写通用的代码,提高复用性。
-
-8. 异常处理 - C++使用try/catch机制进行错误处理。
-
-9. 命名空间 - 命名空间用于组织代码,避免命名冲突。
-
-10. 指针运算 - C++支持指针运算,可以直接操作内存空间。
 
 ## 结语
 
