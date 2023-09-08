@@ -145,8 +145,61 @@ Elastic Beanstalk会自动使用新设置更新环境并相应地扩展应用程
 - 对内存密集型应用使用内存优化型实例(R系列)。
 - 对计算密集型应用使用计算优化型实例(C系列)。
 
+## 代码管道集成
+
+### Git触发自动部署
+
+在EB控制台配置代码源:
+
+```
+Source: GitHub
+Repository: https://github.com/user/repo
+Branch: main
+```
+
+配置触发部署的事件:
+
+```
+Deploy on: Merge pull request
+```
+
+这样GitHub上的合并请求就可以自动触发部署。
+
+### CodeBuild构建流水线
+
+buildspec.yml文件定义构建规范:
+
+```yaml
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - npm install
+  build: 
+    commands:
+      - npm run build
+  post_build:
+    commands:
+      - aws deploy push
+```
+
+CodeBuild完成后调用EB API触发部署。
+
+##  最佳实践
+
+### 数据库备份
+
+备份RDS到S3:
+
+```
+aws rds create-db-snapshot \
+   --db-instance-identifier mydb \
+   --db-snapshot-identifier snapshot-20190815
+```
+
 ## 总结
 
-本教程介绍了AWS Elastic Beanstalk的基础知识,包括如何创建、部署、管理和扩展应用程序。Elastic Beanstalk是一个强大且灵活的平台,可以轻松在AWS云中构建和运行应用程序。
+本教程介绍了AWS Elastic Beanstalk的基础知识,包括如何创建、部署、管理和扩展应用程序等。Elastic Beanstalk是一个强大且灵活的平台,可以轻松在AWS云中构建和运行应用程序。
 
 
