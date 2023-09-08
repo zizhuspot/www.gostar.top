@@ -8,11 +8,9 @@ tags:
   - 中级
   - 高级
   - css
-description: 控制网页中的元素的格式，使网页更加绚丽多彩，比HTML更方便有效
+description: CSS是用于设置网页样式和布局的语言,利用CSS可以让网页更美观大方。控制网页中的元素的格式，使网页更加绚丽多彩，比HTML更方便有效
 cover: https://www.w3docs.com/uploads/media/default/0001/05/6d07a36ebe6d55273b39440f2391f1d7e6d4092a.png
 ---
-
-CSS是用于设置网页样式和布局的语言,利用CSS可以让网页更美观大方。
 
 ## 什么是CSS
 
