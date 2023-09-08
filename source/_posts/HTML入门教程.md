@@ -8,35 +8,159 @@ tags:
   - 中级
   - 高级
   - html
-description: 简单向大家介绍HTML的基本用法
+description: HTML是构建网站的基础,如果你想搭建自己的网页,学习HTML是必不可少的。今天简单向大家介绍HTML的基本用法。希望这篇博客可以帮助大家快速上手HTML。
 cover: https://www.freecodecamp.org/news/content/images/size/w2000/2023/03/HTML-Blog-Cover-1.png
 ---
 
-HTML是构建网站的基础,如果你想搭建自己的网页,学习HTML是必不可少的。今天简单向大家介绍HTML的基本用法。
-希望这篇博客可以帮助大家快速上手HTML。
+> 欢迎来到HTML入门教程!本文将带您快速了解和学习HTML的基础知识,包括HTML的概念、基础语法、文本格式化、表单等内容。通过学习本教程,您可以掌握构建简单网页的技能。现在就让我们开始吧!
 
 ## HTML简介
 
-- HTML全称是Hyper Text Markup Language,超文本标记语言。它通过标记标签来标识网页中的文本、图片、链接
-等内容。
-
-- HTML文档里的文本都处于不同的标签之间,浏览器会根据标签来解析并显示内容。
-
-- HTML文档使用`.html`作为文件扩展名。一个简单的HTML文档结构如下:
+HTML是**超文本标记语言**(Hyper Text Markup Language)的简称,是构建网页的基础。HTML通过使用*标记*来对网页内容进行*结构化*,从而实现文本、图片、视频等内容的展示。HTML的发展历史可追溯至1990年代早期,经历了HTML、XHTML、HTML5等版本的演进。现在最新的是HTML5版本。HTML文档主要包含以下基本结构:
 
 ```html
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
 <head>
-  <title>文档标题</title>
+  <!-- 元数据 -->
 </head>
 <body>
-  文档内容
+  <!-- 页面内容 -->
 </body>
 </html>
 ```
 
-- 浏览器读取这些代码后会解析成可视化的网页。
+接下来我们看看HTML的一些基本语法。
+
+## HTML基础
+
+HTML通过标签来定义不同的元素语义。常见的标签包括heading、paragraph、list等。例如:
+
+```html
+<h1>This is a heading</h1>
+
+<p>This is a paragraph.</p>
+
+<ul>
+  <li>Item 1</li>
+  <li>Item 2</li> 
+</ul>
+```
+
+标签可以有属性来定义其行为:
+
+```html
+<a href="https://www.example.com">This is a link</a>
+```
+
+元素通常可以嵌套来组合使用:
+
+```html
+<p>This is a <strong>paragraph</strong> with <em>emphasis</em>.</p>
+```
+
+常见标签的有:
+
+- `<h1>`~`<h6>`:标题标签。`<h1>`表示一级标题,`<h2>`表示二级标题等等。
+- `<p>`:段落标签。
+- `<a>`:链接标签。例如:`<a href="https://www.example.com">This is a link</a>`。
+- `<img>`:图像标签。例如:`<img src="image.png" width="200">`。
+- `<ul>`和`<ol>`:无序列表和有序列表。
+- `<table>`:定义表格。
+- `<form>`:定义表单。
+
+以上是一些常用的HTML基础标签,掌握这些就可以编写简单的网页了。
+
+## HTML文本格式化
+
+接下来我们看看HTML是如何进行文本格式化的。
+
+### 标题
+
+通过`<h1>` to `<h6>`标签表示1-6级标题:
+
+```html
+<h1>This is heading 1</h1>
+<h2>This is heading 2</h2>
+...
+``` 
+
+### 段落
+
+`<p>`标签用于定义段落:
+
+```html  
+<p>This is a paragraph.</p>
+```
+
+### 列表
+
+无序列表使用`<ul>`和`<li>`:
+
+```html
+<ul>
+  <li>Item 1</li>
+  <li>Item 2</li> 
+</ul>
+```
+
+有序列表使用`<ol>`和`<li>`:
+
+```html
+<ol>
+  <li>First item</li>
+  <li>Second item</li>
+</ol>
+```
+
+### 链接和图片
+
+使用`<a>`定义链接,`<img>`定义图片:
+
+```html
+<a href="https://www.example.com/">Example</a>
+
+<img src="example.jpg" alt="Example image">
+```
+
+### 表格
+
+使用`<table>`、`<tr>`、`<td>`标签定义表格:
+
+```html
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Age</th> 
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>20</td>
+  </tr>
+</table>
+```
+
+此外,HTML还提供了大量格式化文本的标签,如`<b>`、`<i>`、`<span>`等。
+
+## HTML表单
+
+HTML使用表单与用户进行交互。表单包含有交互控件,如文本框、下拉菜单、单选框、按钮等。
+
+定义一个简单的登录表单:
+
+```html
+<form action="/login" method="post">
+  <label>用户名:</label>
+  <input type="text" name="username"><br>
+
+  <label>密码:</label>
+  <input type="password" name="password"><br>
+
+  <button type="submit">登录</button>
+</form>
+```
+
+这样就构建了一个简单的包含输入框、标签、按钮的HTML表单。
 
 ## 主要特点
 
@@ -53,21 +177,6 @@ HTML是构建网页的基础,其主要特点如下:
 9. HTML5添加了很多新标签和功能,如视频、地图等。
 10. 浏览器读取HTML代码并显示出图文网页。
 11. HTML简单易学,是网页开发的基础和必备技能。
-
-
-## 基础标签
-
-HTML有很多标签,常见的有:
-
-- `<h1>`~`<h6>`:标题标签。`<h1>`表示一级标题,`<h2>`表示二级标题等等。
-- `<p>`:段落标签。
-- `<a>`:链接标签。例如:`<a href="https://www.example.com">This is a link</a>`。
-- `<img>`:图像标签。例如:`<img src="image.png" width="200">`。
-- `<ul>`和`<ol>`:无序列表和有序列表。
-- `<table>`:定义表格。
-- `<form>`:定义表单。
-
-以上是一些常用的HTML基础标签,掌握这些就可以编写简单的网页了。
 
 ## 页面结构
 
@@ -190,14 +299,13 @@ HTML有很多标签,常见的有:
 
 这些都是HTML实际开发中常见的案例,可以用来学习和应用HTML的基本标签。
 
-了解了基本页面结构,就可以组织起完整的HTML页面了。
-
 ## 总结
 
 本文通过简单的示例对HTML进行了概述,内容包括:
 
-- HTML的工作原理
-- HTML的主要特点
+- HTML的简介
+- HTML的基本标签和语法
+- 文本格式化方法和HTML表单
 - 一些常用的HTML标签
 - 组织HTML页面的基本结构
 - 常见使用案例

@@ -12,8 +12,6 @@ description: PHP是一种广泛使用的服务器端脚本语言，用于开发�
 cover: https://www.techopedia.com/wp-content/uploads/2023/02/brochure-flyer-paper-poster-logo-trademark-text-building-office-buildi-3.jpg
 ---
 
-PHP是一门非常适合刚开始学习编程的语言,本文将以中等难度介绍PHP的基本语法和开发环境,帮助大家掌握PHP编程的基础。
-
 ## PHP简介
 
 PHP(Hypertext Preprocessor)是一种运行在服务器端的脚本语言,可以用来开发动态网站、Web应用程序等。PHP的优点包括:
@@ -191,6 +189,83 @@ $result = mysqli_query($link, $sql);
 
 这些都是PHP实际开发中常见的操作,可以用来学习PHP的基本语法和功能。
 
+## PHP面向对象编程
+
+### 类和对象
+
+使用class关键字定义类,new实例化对象
+
+```php
+class User {
+  public $name;
+  
+  public function __construct($name) {
+    $this->name = $name;
+  }
+  
+  public function getName() {
+    return $this->name;
+  }
+}
+
+$user = new User("John");
+echo $user->getName();
+```
+
+对象通过 -> 操作符访问属性和方法
+
+### 访问控制 
+
+public、protected和private来控制属性和方法的访问权限
+
+```php 
+class User {
+  private $name;
+  
+  public function __construct($name) {
+    $this->name = $name; 
+  }
+  
+  protected function getName() {
+    return $this->name;
+  }
+}
+```
+
+private仅类内可访问,protected子类可访问,public完全开放
+
+### 继承
+
+使用extends关键字实现继承
+
+```php
+class Member extends User {
+
+  public function printName() {
+    echo $this->getName();
+  }
+
+}
+```
+
+子类可以重写父类方法
+
+### 魔术方法
+
+以双下划线开头的方法为魔术方法
+
+```php
+public function __construct() {
+  // 构造函数
+}
+
+public function __destruct() {
+  // 析构函数
+} 
+```
+
+用于在特殊时期执行代码,如构造、析构、获取属性等
+
 ## PHP开发环境
 
 实际开发PHP需要准备开发环境:
@@ -215,4 +290,4 @@ Laravel可以快速构建优雅的Web应用程序和API。
 
 ## 总结
 
-PHP易于上手,且功能强大,非常适合编程初学者。本文介绍了PHP的基本语法、特点、常见使用案列、环境和框架、等内容,希望可以帮助大家掌握PHP编程的基础。另外还需要通过大量练习来巩固提高。
+PHP易于上手,且功能强大,非常适合编程初学者。本文介绍了PHP的基本语法、特点、常见使用案列、面向对象编程、环境和框架、等内容,希望可以帮助大家掌握PHP编程的基础。另外还需要通过大量练习来巩固提高。

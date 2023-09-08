@@ -66,7 +66,64 @@ JSP页面文件扩展名为`.jsp`。一个示例页面:
 </html>
 ```
 
-## JSP语法
+## JSP基础语法
+
+1. JSP表达式
+
+```jsp
+<%= new java.util.Date()%>
+```
+
+// 输出当前系统时间到页面
+
+2. JSP脚本片段
+
+```jsp
+<%
+   double num1 = 5.5;
+   double num2 = 4.5;
+   double sum = num1 + num2; 
+%>
+```
+
+// 进行变量声明和计算,计算两个数的和
+
+3. JSP声明
+
+```jsp
+<%!
+   static int count = 0; // 声明静态变量
+   public void method(){
+      // 方法体
+   }
+%>
+```
+
+// 声明类级别的变量和方法
+
+4. page指令
+
+```jsp
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+```
+
+// 定义当前jsp页面的属性
+
+5. include指令
+
+```jsp 
+<%@ include file="header.jsp"%>
+```
+
+// 包含header.jsp文件内容
+
+6. taglib指令
+
+```jsp
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+```
+
+// 引入JSTL核心标签库
 
 JSP页面使用XML语法,主要元素包括:
 

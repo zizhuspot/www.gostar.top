@@ -155,8 +155,195 @@ except FileNotFoundError:
   print("文件不存在")
 ```
 
-这些都是Python编程中常见的代码示例,可以用来学习Python的基础语法和标准库的使用,进一步掌握Python编程。
+## Python列表、元组
+
+### 列表
+
+列表的定义:
+
+```python
+mylist = [] # 空列表
+mylist = [1, 2, 3] # 定义列表
+```
+
+添加元素:
+
+```python
+mylist.append(4) # 添加元素到末尾
+mylist.insert(1, 5) # 在指定索引位置插入
+```
+
+访问元素:
+
+```python
+print(mylist[0]) # 通过索引访问元素
+```
+
+列表切片:
+
+```python 
+print(mylist[1:3]) # 前闭后开切片
+``` 
+
+列表推导式:
+
+```python
+newlist = [i*2 for i in mylist] 
+# 遍历mylist每个元素做操作
+```
+
+### 元组
+
+元组的定义与访问:
+
+```python
+mytuple = (1, 2, 3) 
+
+print(mytuple[0]) # 访问元组元素
+```
+
+元组不可变性:
+
+```python
+mytuple[0] = 4 # 错误,元组不可变
+```
+
+##  Python字典、集合
+
+字典的定义:
+
+```python
+mydict = {"name":"John", "age":20} # 字典
+```
+
+访问元素: 
+
+```python
+mydict["name"] # 使用键访问
+```
+
+集合定义:
+
+```python
+myset = {1, 2, 3} # 集合,元素无序唯一
+```
+
+集合运算:
+
+```python
+set1 & set2 # 交集
+set1 | set2 # 并集
+set1 - set2 # 差集
+```
+
+## Python字符串和文件操作
+
+字符串的定义:
+
+```python
+str1 = "Hello"
+str2 = 'World'
+```
+
+字符串拼接:
+
+```python
+str = str1 + " " + str2 # 拼接字符串
+```
+
+格式化字符串:
+
+```python
+"{} {}".format(str1, str2) # 使用format()
+name = "John"
+f"Hello {name}" # f-string格式化
+```
+
+读取文件:
+
+```python 
+file = open("test.txt", "r")
+content = file.read() # 读取文件内容
+file.close() 
+```
+
+写入文件:
+
+```python
+file = open("test.txt", "w") 
+file.write("Hello World") # 写入内容
+file.close()
+```
+
+##  Python面向对象编程
+
+定义类:
+
+```python
+class Person:
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age
+
+p1 = Person("John", 20)
+```
+
+继承:
+
+```python
+class Student(Person):
+  pass # 继承Person
+```
+
+方法重写:
+
+```python
+class Student(Person):
+  def __init__(self, name, age, school):
+    super().__init__(name, age) 
+    self.school = school
+```
+
+## Python模块
+
+导入模块:
+
+```python
+import datetime # 导入模块
+
+print(datetime.date.today())
+```
+
+自定义模块:
+
+```python
+# mymodule.py文件
+
+def sayHi(name):
+  print(f"Hi {name}")
+
+# 使用模块
+import mymodule 
+
+mymodule.sayHi("John")
+```
+
+## Python包管理
+
+使用pip安装模块:
+
+```bash
+pip install pandas
+```
+
+导入模块使用:
+
+```python
+import pandas as pd
+
+pd.DataFrame() 
+```
 
 ## 总结
 
-通过简单的步骤,我们已经完成了Python的安装和编程环境搭建,了解了python的特点并学习了基本语法及常用示例。希望这篇教程可以帮助大家快速入门Python。编程学习还需要大量练习,希望大家在此基础上,继续深入学习,开启Python之旅!
+通过简单的步骤,我们已经完成了Python的安装和编程环境搭建,了解了python的特点并学习了基本语法及常用示例及列表元组、面向对象编程等。希望这篇教程可以帮助大家快速入门Python。编程学习还需要大量练习,希望大家在此基础上,继续深入学习,开启Python之旅!

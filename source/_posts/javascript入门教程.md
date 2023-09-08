@@ -48,21 +48,192 @@ JavaScript是一门非常重要的编程语言,它具有以下关键特点:
 
 ## JavaScript基础语法
 
-JavaScript的基础语法结构与C语言类似,主要组成部分包括:
+JavaScript的基础语法包括变量、数据类型、运算符、函数、流程控制等方面。
 
-- 变量 - 用var定义,用于存储值
-- 函数 - 可重复使用的代码块,例如:
-    ```js
-    function sayHi() {
-      console.log("Hi");
-    }
-    ```
-- 条件判断 - 使用if、else完成判断逻辑
-- 循环结构 - for循环、while循环等
-- 数组 - 使用中括号定义数组
-- 对象 - 使用{}定义对象结构
+### 变量
 
-这些基础构造可以帮助我们编写JavaScript脚本程序。
+使用var、let和const关键字声明变量:
+
+```js
+let name = 'John';
+const age = 20;
+```
+
+### 数据类型
+
+JavaScript的数据类型包括:
+
+- Number:数字类型
+- String:字符串类型 
+- Boolean:布尔类型,true或false
+- null:空值
+- undefined:未定义
+- Object:对象类型
+
+可以使用typeof操作符检查变量类型:
+
+```js
+let num = 1;
+console.log(typeof num); // 'number'
+```
+
+### 运算符
+
+赋值运算符、算术运算符、比较运算符、逻辑运算符等,例如:
+
+```js
+let a = 1;
+let b = 2;
+
+let c = a + b; // 算术运算符
+let d = a >= b; // 比较运算符 
+```
+
+### 函数
+
+使用function关键字定义函数:
+
+```js
+function add(a, b) {
+  return a + b;
+}
+```
+
+### 条件语句
+
+使用if、else、else if控制代码流程:
+
+```js
+if(a > b) {
+  // dosomething
+} else if(a == b) {
+  // dosomething
+} else {
+  // dosomething  
+}
+```
+
+### 循环语句
+
+for循环、while循环、forEach等:
+
+```js
+for(let i = 0; i < 5; i++) {
+  // dosomething
+}
+```
+
+## DOM和BOM
+
+DOM (Document Object Model) 把文档表示为节点树。
+
+使用方法如getElementsByTagName获取节点:
+
+```js
+let elems = document.getElementsByTagName('p'); 
+```
+
+修改节点属性,如innerHTML:
+
+```js
+elems[0].innerHTML = 'New paragraph';
+```
+
+添加事件监听:
+
+```js
+btn.addEventListener('click', function(){
+  // do something  
+});
+```
+
+BOM (Browser Object Model) 提供独立于内容的对象,如:
+
+```js
+let url = window.location.href; // 获取页面URL
+```
+
+## JavaScript数组
+
+创建数组:
+
+```js
+let fruits = ['Apple', 'Banana'];
+```
+
+数组常用方法:
+
+```js
+fruits.push('Orange'); // 末尾添加元素
+fruits.pop(); // 删除末尾元素
+```
+
+数组遍历:
+
+```js
+fruits.forEach(fruit => {
+  console.log(fruit);   
+});
+```
+
+## JavaScript对象
+
+对象表示一组无序的相关属性和方法。
+
+创建对象:
+
+```js 
+let person = {
+  name: 'John',
+  age: 20 
+};
+```
+
+构造函数:
+
+```js
+function Person(name, age) {
+  this.name = name;
+  this.age = age;
+}
+```
+
+## 浏览器本地存储
+
+sessionStorage 和 localStorage API可以在浏览器保存键值对。
+
+```js
+// 保存数据
+localStorage.setItem('key', 'value');
+
+// 获取数据
+let data = localStorage.getItem('key');
+```
+
+## AJAX
+
+原生AJAX请求:
+
+```js
+let xhr = new XMLHttpRequest();
+xhr.open('GET', '/data.json');
+xhr.onload = function() {
+  // todo
+} 
+xhr.send();
+```
+
+## 错误处理
+
+try/catch 捕获异常:
+
+```js
+try {
+  // 可能出错代码 
+} catch(error) {
+  console.log(error);
+}
+```
 
 ## 在HTML中使用JavaScript
 
