@@ -14,6 +14,8 @@ description: 掌握了React Router的使用,可以让我们更便捷地构建包
 cover: https://miro.medium.com/v2/resize:fit:1400/format:webp/1*vHHBwcUFUaHWXntSnqKdCA.png
 ---
 
+## 引言
+
 对于React新手来说,创建一个可渲染不同内容的导航栏是一个具有挑战性的任务。React以构建单页应用而闻名,但它本身不包含任何路由功能。不过,React的路由可以通过一个名为react-router-dom的第三方库来实现。本文的目标是使用React构建一个导航栏,这个导航栏包含不同的内部链接,点击后可以渲染不同的内容。
 
 为了在构建这个导航栏的过程中加深理解,我们先来看看以下几个相关概念:

@@ -14,7 +14,7 @@ description: 本文将指导您在React前端应用中实现用户注册和邮�
 cover: https://th.bing.com/th/id/OIP.09pzWMCF_zYyIFCkx5bMygHaCo?pid=ImgDet&rs=1
 ---
 
-在构建需要用户注册功能的Web应用时,验证用户邮箱的真实性是非常关键的一步。本文将以 coding 的视角,结合实例代码,分享在React应用中实现用户注册与邮箱验证的具体实践流程。
+> 在构建需要用户注册功能的Web应用时,验证用户邮箱的真实性是非常关键的一步。本文将以 coding 的视角,结合实例代码,分享在React应用中实现用户注册与邮箱验证的具体实践流程。
 
 ## 设计邮箱验证组件UI
 

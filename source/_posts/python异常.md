@@ -14,6 +14,8 @@ description: 在本文中,我们将学习如何处理Python中的错误和异常
 cover: https://th.bing.com/th/id/OIP.0MubpYCQxXibVUGvsVGCjAHaDb?pid=ImgDet&rs=1
 ---
 
+## 引言
+
 通常在Python编程中会遇到两类错误:语法错误和异常。
 
 任何由无效语法、缩进或编程结构引起的错误通常被视为语法错误。当发生语法错误时,程序会在语法错误发生的位置崩溃。
