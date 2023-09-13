@@ -15,7 +15,7 @@ cover: https://pic1.zhimg.com/v2-756c8bf87f9c43506547aa66b1529db9_720w.jpg?sourc
 
 > 建造自己的Chrome扩展无异于攀登珠峰?放心,我们会用简单的5步骤来颠覆你的想象!在读完本文后,你不仅会对扩展开发有初步的认知,更能亲手打造属于自己的实用扩展。
 
-### 我们要创建什么
+## 我们要创建什么
 
 最近,我们见证了AI能力的爆炸式增长。而当这些新的网络伙伴为我们提供前所未有的协助时,也提醒我们:不要与他们分享敏感信息。
 
@@ -29,7 +29,7 @@ cover: https://pic1.zhimg.com/v2-756c8bf87f9c43506547aa66b1529db9_720w.jpg?sourc
 
 要按照本教程进行操作，您需要一个 ChatGPT 帐户。没有？您可以在[此处免费注册](https://auth0.openai.com/u/signup/identifier?state=hKFo2SBDVzg2VFJCTktxQWlKSEhELWhUYVhaZVhLVndjbFY4Z6Fur3VuaXZlcnNhbC1sb2dpbqN0aWTZIDFiVV9ZaVdsN0tUdDhiM2VfU3lNRkhKdDRrcjZrVTY3o2NpZNkgRFJpdnNubTJNdTQyVDNLT3BxZHR3QjNOWXZpSFl6d0Q)
 
-### 什么是Chrome扩展程序
+## 什么是Chrome扩展程序
 
 在我们开始之前,让我们澄清什么是Chrome扩展程序。Chrome扩展程序是一小段旨在增强或修改Chrome浏览体验的软件。扩展程序使用标准的Web技术开发——HTML、JavaScript和CSS——它们的功能可以从简单的工具(如取色器)到更复杂的(如密码管理器)。许多这些扩展程序可以从Chrome网上应用店下载。 
 
@@ -89,7 +89,7 @@ cover: https://pic1.zhimg.com/v2-756c8bf87f9c43506547aa66b1529db9_720w.jpg?sourc
 
 清单文件有三个强制字段,即:manifest_version、name和version。其余的都是可选的。
 
-### 关键清单元素
+#### 关键清单元素
 
 - manifest_version:指定清单文件格式的版本号。我们使用Manifest V3,这是最新可用的版本。请注意,Google正在2023年积极淘汰Manifest V2扩展。
 
@@ -227,7 +227,7 @@ const forbiddenWords = [
 
 ![](https://cdn.jsdelivr.net/gh/PirlosM/image@main/20230903202250.png)
 
-### 接下来的工作
+## 接下来的工作
 
 我们当前的基本Chrome扩展程序已完成其目的,但总有改进的空间。 如果你渴望进一步完善扩展程序并扩展其功能,下面是一些建议。
 
@@ -245,7 +245,7 @@ const forbiddenWords = [
 
 您还可以查看该扩展程序的Firefox版本,其中实现了此功能。
 
-### 结论
+## 结论
 
 我们已经发现,构建自己的Google Chrome扩展程序并非难以攀登的巅峰。我们从一个明确的目标开始:为ChatGPT创建一个保护层,确保敏感信息保密。 在本教程中,我们已经看到,几个文件和一些代码就可以产生一个功能性和有用的浏览器扩展程序。
 
