@@ -7,7 +7,7 @@ tags:
   - Amazon
   - Anthropic
 description: Amazon.com is investing $4 billion in Anthropic as the two companies announced a strategic partnership to advance generative AI.
-cover: https://www.bing.com/images/search?view=detailV2&ccid=3Th05eL1&id=6C0D0D0DE0CC050BAA42FAA825248B0BB34A6B77&thid=OIP.3Th05eL16xGKDxHpztUxQQHaE8&mediaurl=https%3a%2f%2fcdn.vox-cdn.com%2fthumbor%2f8hxhUYWgwE0_XUUHcdoRYsljrwk%3d%2f888x610%3a5472x3648%2f1200x800%2ffilters%3afocal(2947x1353%3a3821x2227)%2fcdn.vox-cdn.com%2fuploads%2fchorus_image%2fimage%2f55488195%2fGettyImages_535058999.1498669941.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.dd3874e5e2f5eb118a0f11e9ced53141%3frik%3dd2tKswuLJCWo%252bg%26pid%3dImgRaw%26r%3d0&exph=800&expw=1200&q=amazon&simid=608040144168124136&FORM=IRPRST&ck=A8144B7B7391E2CBFFD748B7EA5FD9E5&selectedIndex=5&ajaxhist=0&ajaxserp=0
+cover: https://th.bing.com/th/id/R.006fe413699626842011c1018953482f?rik=xHMLgvgYx%2bV8og&pid=ImgRaw&r=0
 ---
 
 ## Introduction
