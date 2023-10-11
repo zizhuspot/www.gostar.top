@@ -915,6 +915,7 @@ inject:
     - <meta name="monetag" content="7da33c92d80060f720f879a4284476c5">
   bottom:
     # - <script src="xxxx"></script>
+    - <script>(function(d,z,s){s.src='https://'+d+'/400/'+z;try{(document.body||document.documentElement).appendChild(s)}catch(e){}})('saptorge.com',6455848,document.createElement('script'))</script>
 
 # CDN
 # Don't modify the following settings unless you know how they work
