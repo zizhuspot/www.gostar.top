@@ -104,7 +104,7 @@ agent.run("Christian Bale出演了多少部电影?")
 
 这段代码调用create_csv_agent函数,并使用netflix_titles.csv数据集。下图展示了我们的测试结果。
 
-![](https://cdn.jsdelivr.net/gh/PirlosM/image@main/20231015184927.png)
+![](https://cdn.jsdelivr.net/gh/PirlosM/image@main/20231016112644.png)
 
 正如上面所示,它的逻辑是在“cast”列中查找所有出现的“Christian Bale”。
 
@@ -186,7 +186,7 @@ print(chat(messages))
 
 如果运行这个聊天机器人模型,你会看到类似下面的结果。
 
-![](https://i.imgur.com/wywOYen.png)
+![](https://cdn.jsdelivr.net/gh/PirlosM/image@main/20231016113201.png)
 
 ### 嵌入模型
 
