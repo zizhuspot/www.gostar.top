@@ -9,7 +9,6 @@ tags:
   - 高级
   - css
 description: CSS是用于设置网页样式和布局的语言,利用CSS可以让网页更美观大方。控制网页中的元素的格式，使网页更加绚丽多彩，比HTML更方便有效
-cover: https://www.w3docs.com/uploads/media/default/0001/05/6d07a36ebe6d55273b39440f2391f1d7e6d4092a.png
 ---
 
 ## 什么是CSS
@@ -58,7 +57,7 @@ selector {
 p {
   color: red;
   font-size: 14px;
-} 
+}
 ```
 
 选择器指明样式适用的元素,声明块指定要应用的样式。
@@ -94,7 +93,7 @@ p {
 
 注释内容不会被浏览器解析,用于代码说明。
 
-## 如何使用CSS 
+## 如何使用CSS
 
 主要有三种方式:
 
@@ -107,7 +106,7 @@ p {
   <style>
     p {
       color: red;
-    } 
+    }
   </style>
   ```
 - 外部样式表:使用外部`.css`文件,在`<head>`中使用`<link>`标签链接
@@ -124,7 +123,7 @@ p {
 ```css
 p {
   color: blue;
-} 
+}
 ```
 
 改变背景:
@@ -147,7 +146,7 @@ body {
 
 ```css
 p {
-  text-align: center;  
+  text-align: center;
 }
 ```
 
@@ -176,16 +175,16 @@ text-align: center;
 
 2. 背景样式
 
-```css 
+```css
 /* 设置背景颜色、图片等 */
 background-color: #f2f2f2;
 background-image: url(bg.jpg);
 ```
 
-3. 超链接样式 
+3. 超链接样式
 
 ```css
-/* 设置不同状态下的颜色、下划线等 */  
+/* 设置不同状态下的颜色、下划线等 */
 a {
   color: hotpink;
 }
@@ -202,7 +201,7 @@ a:hover {
 ul {
   list-style-type: circle;
 }
-``` 
+```
 
 5. 盒模型
 
@@ -216,7 +215,7 @@ margin: 10px 5px;
 6. 浮动和定位
 
 ```css
-/* 设置浮动、相对/绝对定位 */ 
+/* 设置浮动、相对/绝对定位 */
 float: left;
 position: absolute;
 top: 100px;
@@ -254,11 +253,11 @@ CSS提供了一些高级技巧,可以创建更复杂的样式效果和逻辑。
 - width - 视口宽度
 - height - 视口高度
 - orientation - 横屏或竖屏
-- resolution - 分辨率 
+- resolution - 分辨率
 
 根据不同特征选取要应用的样式。
 
-#### CSS动画 
+#### CSS动画
 
 使用@keyframes定义动画序列,配合动画属性应用:
 
@@ -273,7 +272,7 @@ CSS提供了一些高级技巧,可以创建更复杂的样式效果和逻辑。
 }
 
 img {
-  animation: slideIn 1s ease-in-out; 
+  animation: slideIn 1s ease-in-out;
 }
 ```
 

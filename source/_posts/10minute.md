@@ -10,7 +10,6 @@ tags:
   - Manifest V3
   - Manifest V2
 description: 您是否曾经考虑过构建自己的Chrome扩展程序，但认为该过程可能太复杂了？好吧，你会大吃一惊！在接下来的几分钟里，我们不仅会介绍Chrome扩展程序的基础知识，还会指导您完成五个简单的步骤来制作自己的扩展程序。
-cover: https://pic1.zhimg.com/v2-756c8bf87f9c43506547aa66b1529db9_720w.jpg?source=172ae18b
 ---
 
 > 建造自己的Chrome扩展无异于攀登珠峰?放心,我们会用简单的5步骤来颠覆你的想象!在读完本文后,你不仅会对扩展开发有初步的认知,更能亲手打造属于自己的实用扩展。
@@ -19,7 +18,7 @@ cover: https://pic1.zhimg.com/v2-756c8bf87f9c43506547aa66b1529db9_720w.jpg?sourc
 
 最近,我们见证了AI能力的爆炸式增长。而当这些新的网络伙伴为我们提供前所未有的协助时,也提醒我们:不要与他们分享敏感信息。
 
-我不知道你怎么看,但我的手指往往比大脑更快。所以,为了防止可能的失误,我们将为ChatGPT创建一个"防护装置"。 
+我不知道你怎么看,但我的手指往往比大脑更快。所以,为了防止可能的失误,我们将为ChatGPT创建一个"防护装置"。
 
 如果你对“防护装置”这个词感到困惑,它最初指的是用于防止意外激活按钮或开关的挡板。在我们的场景下,它是一个数字守护者,确保我们不会过度分享。
 
@@ -31,7 +30,7 @@ cover: https://pic1.zhimg.com/v2-756c8bf87f9c43506547aa66b1529db9_720w.jpg?sourc
 
 ## 什么是Chrome扩展程序
 
-在我们开始之前,让我们澄清什么是Chrome扩展程序。Chrome扩展程序是一小段旨在增强或修改Chrome浏览体验的软件。扩展程序使用标准的Web技术开发——HTML、JavaScript和CSS——它们的功能可以从简单的工具(如取色器)到更复杂的(如密码管理器)。许多这些扩展程序可以从Chrome网上应用店下载。 
+在我们开始之前,让我们澄清什么是Chrome扩展程序。Chrome扩展程序是一小段旨在增强或修改Chrome浏览体验的软件。扩展程序使用标准的Web技术开发——HTML、JavaScript和CSS——它们的功能可以从简单的工具(如取色器)到更复杂的(如密码管理器)。许多这些扩展程序可以从Chrome网上应用店下载。
 
 注意:对于那些渴望更深入理解Chrome扩展程序的人,Google的官方文档是一个非常宝贵的资源。
 
@@ -39,7 +38,7 @@ cover: https://pic1.zhimg.com/v2-756c8bf87f9c43506547aa66b1529db9_720w.jpg?sourc
 
 在我们的教程中,我们将关注一种使用内容脚本的扩展类型。该脚本将允许我们与特定页面的DOM交互和操作——在我们的例子中是ChatGPT接口。
 
-### 步骤1:创建扩展程序文件 
+### 步骤1:创建扩展程序文件
 
 要启动,我们需要为Chrome扩展程序设置基本结构。我们的名为chatgpt-mollyguard的扩展程序将组织在一个专用文件夹中。这个扩展目录将包含所有必要的文件,使我们的防护装置能够顺利工作。
 
@@ -93,7 +92,7 @@ cover: https://pic1.zhimg.com/v2-756c8bf87f9c43506547aa66b1529db9_720w.jpg?sourc
 
 - manifest_version:指定清单文件格式的版本号。我们使用Manifest V3,这是最新可用的版本。请注意,Google正在2023年积极淘汰Manifest V2扩展。
 
-- name:标识扩展程序的简短纯文本字符串(最大45个字符)。 
+- name:标识扩展程序的简短纯文本字符串(最大45个字符)。
 
 - version:一个到四个用点分隔的整数,用于标识扩展程序的版本。
 
@@ -125,7 +124,7 @@ const debounce = (callback, wait) => {
 };
 
 function containsForbiddenWords(value) {
-  return forbiddenWords.some(word => value.toLowerCase().includes(word.toLowerCase())); 
+  return forbiddenWords.some(word => value.toLowerCase().includes(word.toLowerCase()));
 }
 
 function updateUI(target) {
@@ -137,7 +136,7 @@ function updateUI(target) {
     sendButton.disabled = true;
     parentDiv.classList.add('forbidden-div');
   } else {
-    sendButton.disabled = false; 
+    sendButton.disabled = false;
     parentDiv.classList.remove('forbidden-div');
   }
 }
@@ -150,7 +149,7 @@ document.addEventListener('keydown', (e) => {
   if (e.target.id === 'prompt-textarea' && e.key === 'Enter') {
     if (containsForbiddenWords(e.target.value)) {
       e.stopPropagation();
-      e.preventDefault(); 
+      e.preventDefault();
     }
   }
 }, true);
@@ -183,7 +182,7 @@ updateUI函数确定聊天框中是否存在任何禁用的单词。如果存在
 ```css
 .forbidden-div {
   border: 2px solid red !important;
-  background-color: #ffe6e6 !important; 
+  background-color: #ffe6e6 !important;
 }
 ```
 
@@ -191,7 +190,7 @@ updateUI函数确定聊天框中是否存在任何禁用的单词。如果存在
 
 值得注意的还有!important标志。在处理你不拥有的网页时(像在这里的ChatGPT),现有的样式可能非常具体。为确保我们的样式具有优先级并正确应用,这个标志会覆盖任何因现有样式特性导致的潜在冲突。
 
-### 步骤5:测试扩展程序 
+### 步骤5:测试扩展程序
 
 还有最后一步:填充我们的扩展程序应监视的禁用词汇列表。我们可以在forbiddenWords.js中添加这些词汇:
 
@@ -199,7 +198,7 @@ updateUI函数确定聊天框中是否存在任何禁用的单词。如果存在
 const forbiddenWords = [
   "my-company.com",
   "SitePoint",
-  "Jim", 
+  "Jim",
 ];
 ```
 
@@ -235,7 +234,7 @@ const forbiddenWords = [
 
 目前,我们的扩展程序依赖预定义的受限词汇表。实现用户友好的界面将允许用户动态添加、删除或修改词汇表,这可以通过在单击扩展图标时打开的弹出UI来完成,用户可以在其中管理词汇表。您还需要将词汇持久化到存储。
 
-2. 处理鼠标粘贴事件 
+2. 处理鼠标粘贴事件
 
 虽然我们的扩展程序检测按键,但用户可以通过鼠标右键菜单粘贴敏感信息来绕过此限制。为堵塞这一漏洞,我们可以添加paste事件侦听器(或统一监听input事件)。这将确保无论信息是键入还是粘贴,过滤器都保持健壮。
 
@@ -251,4 +250,4 @@ const forbiddenWords = [
 
 对于渴望深入探究的人,Google的官方Chrome扩展文档是一个很好的起点。 此外,Chrome扩展迁移指南提供了关于向Manifest V3过渡的见解,这对于2023年即将淘汰Manifest V2的情况至关重要。
 
-现在你已经见识过了过程,我鼓励你完善、增强并根据需要调整扩展程序。 
+现在你已经见识过了过程,我鼓励你完善、增强并根据需要调整扩展程序。

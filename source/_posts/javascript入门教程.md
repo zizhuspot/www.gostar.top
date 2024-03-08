@@ -9,7 +9,6 @@ tags:
   - 高级
   - JavaScript
 description: JSP简化了动态网页的开发,通过其组件化的特性,可以快速高效地开发数据库驱动的Web应用。它是很多Java Web项目的首选。
-cover: https://www.geekboots.com/_next/image?url=https%3A%2F%2Fcdn.geekboots.com%2Fgeek%2Fjavascript-hero-1652702096795.webp&w=2048&q=75
 ---
 
 JavaScript是一门非常基础和重要的编程语言,对于Website的交互功能都需要依赖它。本教程将通过简单的图文向JavaScript初学者介绍基本语法和使用方法,让大家快速上手。
@@ -64,7 +63,7 @@ const age = 20;
 JavaScript的数据类型包括:
 
 - Number:数字类型
-- String:字符串类型 
+- String:字符串类型
 - Boolean:布尔类型,true或false
 - null:空值
 - undefined:未定义
@@ -86,7 +85,7 @@ let a = 1;
 let b = 2;
 
 let c = a + b; // 算术运算符
-let d = a >= b; // 比较运算符 
+let d = a >= b; // 比较运算符
 ```
 
 ### 函数
@@ -109,7 +108,7 @@ if(a > b) {
 } else if(a == b) {
   // dosomething
 } else {
-  // dosomething  
+  // dosomething
 }
 ```
 
@@ -130,7 +129,7 @@ DOM (Document Object Model) 把文档表示为节点树。
 使用方法如getElementsByTagName获取节点:
 
 ```js
-let elems = document.getElementsByTagName('p'); 
+let elems = document.getElementsByTagName('p');
 ```
 
 修改节点属性,如innerHTML:
@@ -143,7 +142,7 @@ elems[0].innerHTML = 'New paragraph';
 
 ```js
 btn.addEventListener('click', function(){
-  // do something  
+  // do something
 });
 ```
 
@@ -172,7 +171,7 @@ fruits.pop(); // 删除末尾元素
 
 ```js
 fruits.forEach(fruit => {
-  console.log(fruit);   
+  console.log(fruit);
 });
 ```
 
@@ -182,10 +181,10 @@ fruits.forEach(fruit => {
 
 创建对象:
 
-```js 
+```js
 let person = {
   name: 'John',
-  age: 20 
+  age: 20
 };
 ```
 
@@ -219,7 +218,7 @@ let xhr = new XMLHttpRequest();
 xhr.open('GET', '/data.json');
 xhr.onload = function() {
   // todo
-} 
+}
 xhr.send();
 ```
 
@@ -229,7 +228,7 @@ try/catch 捕获异常:
 
 ```js
 try {
-  // 可能出错代码 
+  // 可能出错代码
 } catch(error) {
   console.log(error);
 }
@@ -251,7 +250,7 @@ function sayHi() {
 </script>
 
 </body>
-</html> 
+</html>
 ```
 
 使用`<script>`标签也可以引入外部的js文件:
@@ -263,7 +262,7 @@ function sayHi() {
 页面中可以通过`onclick`等给元素绑定JavaScript事件:
 
 ```html
-<button onclick="sayHi()">Click me</button> 
+<button onclick="sayHi()">Click me</button>
 ```
 
 ## 浏览器调试
@@ -324,7 +323,7 @@ fetch('/api/users')
   .then(res => res.json())
   .then(data => {
     // 处理返回数据
-  }); 
+  });
 ```
 
 3. 表单验证
@@ -344,7 +343,7 @@ function validateUsername(){
 
 ```js
 // 使用setInterval实现动画
-let id = setInterval(frame, 100); 
+let id = setInterval(frame, 100);
 
 function frame() {
   // 每100毫秒执行一次
@@ -360,7 +359,7 @@ window.addEventListener('scroll', function() {
   if(window.scrollY > 100){
     navbar.classList.add('fixed');
   } else {
-    navbar.classList.remove('fixed');  
+    navbar.classList.remove('fixed');
   }
 })
 ```
@@ -370,4 +369,3 @@ window.addEventListener('scroll', function() {
 ## 总结
 
 本教程简单介绍了JavaScript的用途、基本语法、使用方法和一些简单示例,希望可以帮助初学者快速入门。JavaScript是一门强大的语言,需要通过大量的编程实践来掌握和提高。
-

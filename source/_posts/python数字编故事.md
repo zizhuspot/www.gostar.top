@@ -11,7 +11,6 @@ tags:
   - 应用
   - 程序
 description: 这个简单的文字游戏可以帮助你熟悉Python的基本语法,和编程思维。改进和扩展游戏的机会也是无穷无尽的。
-cover: https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/4e105f96750899.5eb54f337fb8e.png
 ---
 
 > 编写一个简单的数字猜猜游戏,是Python初学者很好的编程练习。通过这个过程,你可以学习Python的基础语法,同时培养编程思维。下面我将详细介绍如何一步步实现这个小游戏。
@@ -45,7 +44,7 @@ import random
 接下来设置随机数字的范围和玩家的最大猜测次数:
 
 ```python
-lower_bound = 1 
+lower_bound = 1
 upper_bound = 1000
 max_attempts = 10
 ```
@@ -70,11 +69,11 @@ secret_number = random.randint(lower_bound, upper_bound)
 def get_guess():
   # 循环提示输入,直到输入一个有效数字
   while True:
-    guess = int(input(f"请猜一个{lower_bound}到{upper_bound}之间的数字:"))  
+    guess = int(input(f"请猜一个{lower_bound}到{upper_bound}之间的数字:"))
     if lower_bound <= guess <= upper_bound:
       return guess
     else:
-      print("无效输入,请重新输入指定范围内的数字。")  
+      print("无效输入,请重新输入指定范围内的数字。")
 ```
 
 ### 步骤5: 检查猜测结果
@@ -86,7 +85,7 @@ def check_guess(guess, secret_number):
   if guess == secret_number:
     return "猜对了!"
   elif guess < secret_number:
-    return "猜小了!" 
+    return "猜小了!"
   else:
     return "猜大了!"
 ```
@@ -100,20 +99,20 @@ def play_game():
 
   attempts = 0
   won = False
-  
+
   while attempts < max_attempts:
-  
+
     attempts += 1
     guess = get_guess()
     result = check_guess(guess, secret_number)
-    
+
     if result == "猜对了!":
       print(f"恭喜!你在{attempts}次尝试中猜对了数字{secret_number}!")
       won = True
       break
     else:
       print(f"{result},请重试!")
-      
+
   if not won:
     print(f"抱歉,你的{max_attempts}次尝试均失败了,正确数字是{secret_number}。")
 ```
@@ -124,7 +123,7 @@ def play_game():
 
 调用游戏函数,启动游戏!
 
-```python 
+```python
 if __name__ == "__main__":
   print("欢迎来到数字猜猜游戏!")
   play_game()

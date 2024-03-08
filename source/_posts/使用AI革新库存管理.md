@@ -11,7 +11,6 @@ tags:
   - 应用
   - 节省成本
 description: 库存管理是所有销售实体商品的企业必不可少的一环,直接关系到企业的运营效率和成本控制。但是传统的库存管理方式存在种种问题,无法应对当今瞬息万变的商业环境。借助人工智能技术,可以实现更智能化的库存管理,节省成本、提高准确度。
-cover: https://www.unemyr.com/wp-content/uploads/2019/06/artificial-intelligence-4117066_1280-768x512.jpg
 ---
 
 > 库存管理是所有销售实体商品的企业必不可少的一环,直接关系到企业的运营效率和成本控制。但是传统的库存管理方式存在种种问题,无法应对当今瞬息万变的商业环境。借助人工智能技术,可以实现更智能化的库存管理,节省成本、提高准确度。本文将详细探讨人工智能在库存管理领域的应用情况、实施难点及未来发展趋势。
@@ -65,10 +64,10 @@ import math
 def calculate_eoq(demand, order_cost, holding_cost):
   """计算经济订货批量(EOQ)"""
 
-  return math.sqrt((2 * demand * order_cost) / holding_cost) 
+  return math.sqrt((2 * demand * order_cost) / holding_cost)
 
 # 假设年需求量=10000单位,每次订货成本=$50,每单位每年持有成本=$2
-demand = 10000  
+demand = 10000
 order_cost = 50
 holding_cost = 2
 
@@ -92,16 +91,16 @@ from sklearn.ensemble import IsolationForest
 inventory_data = pd.DataFrame(...)
 
 # 定义IsolationForest模型
-model = IsolationForest(contamination=0.05) 
+model = IsolationForest(contamination=0.05)
 
 # 在库存数据上训练模型
 model.fit(inventory_data)
 
-# 对库存数据进行异常预测  
+# 对库存数据进行异常预测
 anomalies = model.predict(inventory_data)
 
 # anomalies返回1表示正常数据,-1表示异常数据
-anomalies[anomalies == 1] # 正常数据 
+anomalies[anomalies == 1] # 正常数据
 anomalies[anomalies == -1] # 异常数据
 ```
 
@@ -115,7 +114,7 @@ def reorder(sku, order_quantity):
   # 代码实现向供应商下单
   print(f"已对{sku}下达购买订单,数量:{order_quantity}")
 
-# 检查所有SKU的库存  
+# 检查所有SKU的库存
 for sku in inventory_data['sku'].unique():
 
   current_stock = inventory_data[inventory_data['sku'] == sku]['quantity'].sum()
@@ -130,13 +129,13 @@ for sku in inventory_data['sku'].unique():
 
 ## 在库存管理中应用人工智能存在一些问题和采取合理的对策
 
-### 数据质量 
+### 数据质量
 
 首要问题。我们需要检查数据中是否存在异常值、缺失值等,并进行预处理。建立自动化的数据管控流程,可以持续监控质量。利用python的pandas或类似工具,可以大幅优化数据准备过程。
 
 ### 基础设施需求
 
-人工智能对算力要求高,我们可以考虑云计算形态,按需调节资源。AWS、Azure等都提供了易用的人工智能云服务。我们可以从小规模试点做起,逐步扩大规模。 
+人工智能对算力要求高,我们可以考虑云计算形态,按需调节资源。AWS、Azure等都提供了易用的人工智能云服务。我们可以从小规模试点做起,逐步扩大规模。
 
 ### 管理团队和技能专业知识
 

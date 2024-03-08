@@ -3,12 +3,11 @@ title: Astro - The Best Web Framework for 2023
 date: 2023-12-02 14:28:28
 categories:
   - Technical section
-tags: 
+tags:
   - Astro
   - Web framework
   - 2023 Best
 description: Astro has become a powerful web framework that provides developers with a versatile solution for building efficient, high-performance websites. It is undoubtedly the best web framework of 2023. In this fast-paced digital age, embrace Astro and realize its potential to create extraordinary web experiences that engage users.
-cover: https://global-uploads.webflow.com/601be0f0f62d8b2e2a92b830/6364f51f6fa383d7f434bb08_astro-mfes.png
 ---
 
 ## Introduction

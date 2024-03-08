@@ -9,7 +9,6 @@ tags:
   - CICD
   - GitHub Actions
 description: 这是一篇通俗易懂的 GitHub Actions 入门教程,通过具体示例带领读者学习如何利用它来自动化软件开发流程。
-cover: https://techworm.net/programming/wp-content/uploads/2018/10/github-actions.jpg
 ---
 
 ## 引言
@@ -48,7 +47,7 @@ name: GitHub Actions
 
 ```
 # 单个触发器
-on: [push] 
+on: [push]
 
 # 多个触发器
 on: [push, fork]
@@ -67,9 +66,9 @@ on:
 Cron表达式可以分解为以下部分:
 
 - `0`:第一个字段是分钟。它表示每小时的第0分钟运行。
-- `*/12`:它表示小时字段。它将每12小时运行一次。`*/12`表示每12小时运行一次,而只指定`12`会导致在上午12点和下午12点运行任务。您还可以使用24小时制的时间,例如23表示晚上11点。 
+- `*/12`:它表示小时字段。它将每12小时运行一次。`*/12`表示每12小时运行一次,而只指定`12`会导致在上午12点和下午12点运行任务。您还可以使用24小时制的时间,例如23表示晚上11点。
 - `*`:它是运行的日字段。将每天运行。
-- `*`:下一个星号是月份。它将每个月运行一次。  
+- `*`:下一个星号是月份。它将每个月运行一次。
 - `*`:最后一个星号定义了星期几。它表示每个工作日运行。它以数字形式表示星期几,星期日是一周的第一天,值为0。使用逗号分隔不同的星期几,例如`0,2,3`。
 
 因此,较简单的语法可以写为:
@@ -114,7 +113,7 @@ build是作业的名称。其中,runs-on定义了作业将运行的机器。您�
 最后一步是实际运行代码,产生输出。在我们的例子中,我们使用npm test命令来运行测试。您也可以运行存储库中存在的任何Node.js文件。
 
 ```
-- name: Update README  
+- name: Update README
   run: node update-readme.js
 ```
 
@@ -134,14 +133,14 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Setup Node.js  
+      - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
           node-version: '14'
-          
+
       - name: Install dependencies
         run: npm install
-        
+
       - name: Run tests
         run: npm test
 ```
@@ -173,7 +172,7 @@ jobs:
 ```
 - name: Update README
   run: node update-readme.js
-  env: 
+  env:
     GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
 

@@ -8,7 +8,6 @@ tags:
   - using
   - 资源管理
 description: 合理的资源管理对开发高质量、可维护的应用程序极为重要。TypeScript 5.2中新增的using语句提供了更简单方便的资源管理方式。
-cover: https://miro.medium.com/max/1200/1*zbYWWzFqY2ywsCUpY0jMxA.png
 ---
 
 ## 引言
@@ -25,7 +24,7 @@ using语句将资源的获取和关闭连接在一起,可以大大简化资源�
 
 - 简化资源管理代码,不需要写重复的关闭资源代码
 - 避免资源泄漏问题,资源被及时释放
-- 使用更清晰的语义分组来管理不同类型的资源 
+- 使用更清晰的语义分组来管理不同类型的资源
 - 代码更整洁,逻辑更清晰
 - 支持同时声明多个资源,简化多个资源的管理
 
@@ -52,7 +51,7 @@ using语句将资源的获取和关闭连接在一起,可以大大简化资源�
     ```ts
     using (resource = new Resource()) {
       // 使用resource
-    } 
+    }
     ```
 
 3. `using`块结束时会自动调用`resource`的`dispose`方法释放资源
@@ -102,7 +101,7 @@ const db = new Database();
 try {
   // 使用连接
   db.connect();
-  db.execute();   
+  db.execute();
 } finally {
   // 释放连接
   db.disconnect();
@@ -115,7 +114,7 @@ try {
 
 using语句可以大大简化资源管理。使用方式:
 
-```ts 
+```ts
 using (db = new Database()) {
 
   // 使用db
@@ -131,7 +130,7 @@ using (db = new Database()) {
 
 实现方式:
 
-1. 目标类实现Disposable接口  
+1. 目标类实现Disposable接口
 
 Disposable接口需要实现`[Symbol.dispose]()`方法用于资源释放。
 
@@ -152,9 +151,9 @@ import { Database } from 'library';
 
 using (db = new Database()) {
   db.connect();
-  // 查询数据 
+  // 查询数据
 } // 自动关闭连接
-```  
+```
 
 块结束时会自动调用db的dispose方法释放资源。
 
@@ -207,10 +206,10 @@ using (getConnection()) {
 
 我们可以通过在using语句中以逗号分隔的方式同时声明多个资源。这可以避免多次打开资源的开销。
 
-```typescript 
+```typescript
 using (const conn = getConnection(), const file = openFile()) {
   // 使用数据库和文件
-} 
+}
 ```
 
 ### 自定义清理函数
@@ -222,7 +221,7 @@ function cleanup(resource) {
   // 自定义资源清理
 }
 
-using (resource, cleanup) 
+using (resource, cleanup)
 ```
 
 使用这些高级用法可以让using语句管理资源更加灵活丰富,实现自定义的控制逻辑。

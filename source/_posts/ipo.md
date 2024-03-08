@@ -7,7 +7,6 @@ tags:
   - Skincare Industry
   - Women's entrepreneurship
 description: The success story of Giant Biogene and its co-founder, Fan Daidi, exemplifies the rise of Chinese women in the skincare industry.
-cover: https://th.bing.com/th/id/R.4233552adcdbfb552b40ff5ed12cedc2?rik=g4ZiqlzKzFtt%2fg&pid=ImgRaw&r=0
 ---
 
 ## Introduction

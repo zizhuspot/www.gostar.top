@@ -9,7 +9,6 @@ tags:
   - 高级
   - php
 description: PHP是一种广泛使用的服务器端脚本语言，用于开发动态网页和Web应用程序。
-cover: https://www.techopedia.com/wp-content/uploads/2023/02/brochure-flyer-paper-poster-logo-trademark-text-building-office-buildi-3.jpg
 ---
 
 ## PHP简介
@@ -77,7 +76,7 @@ PHP常用的数据类型包括:
 
 使用var_dump()函数可以查看变量的数据类型
 
-```php 
+```php
 $str = "hello";
 var_dump($str); // string(5) "hello"
 ```
@@ -90,7 +89,7 @@ PHP支持多种算术、赋值、比较、逻辑运算符
 $a + $b; // 算术运算符
 $a += 5; // 赋值运算符
 $a == $b; // 比较运算符
-$a && $b; // 逻辑运算符 
+$a && $b; // 逻辑运算符
 ```
 
 ### 流程控制
@@ -99,7 +98,7 @@ if语句、while循环、for循环、switch语句等
 
 ```php
 if ($a > $b) {
-  echo "a大于b"; 
+  echo "a大于b";
 } else {
   echo "a小于或等于b";
 }
@@ -131,7 +130,7 @@ greeting("John"); // 调用函数
 
 ```php
 echo "Hello PHP";
-print "Hello PHP"; 
+print "Hello PHP";
 ```
 
 2. 变量操作
@@ -157,7 +156,7 @@ $username = $_POST['username'];
 
 ```php
 $str = "Hello" . " world!";
-$sub = substr($str, 0, 5); 
+$sub = substr($str, 0, 5);
 ```
 
 5. 数组处理
@@ -177,7 +176,7 @@ if判断、foreach循环等:
 
 ```php
 if ($a > $b) {
-  echo "a大于b"; 
+  echo "a大于b";
 }
 
 foreach ($arr as $value) {
@@ -194,13 +193,13 @@ $now = time(); //当前时间戳
 echo date("Y-m-d h:i:s", $now);
 ```
 
-8. 文件操作  
+8. 文件操作
 
 读取、写入文件:
 
 ```php
 $content = file_get_contents("/path/to/file.txt");
-file_put_contents("/path/to/file.txt", "Hello"); 
+file_put_contents("/path/to/file.txt", "Hello");
 ```
 
 9. 数据库操作
@@ -224,11 +223,11 @@ $result = mysqli_query($link, $sql);
 ```php
 class User {
   public $name;
-  
+
   public function __construct($name) {
     $this->name = $name;
   }
-  
+
   public function getName() {
     return $this->name;
   }
@@ -240,18 +239,18 @@ echo $user->getName();
 
 对象通过 -> 操作符访问属性和方法
 
-### 访问控制 
+### 访问控制
 
 public、protected和private来控制属性和方法的访问权限
 
-```php 
+```php
 class User {
   private $name;
-  
+
   public function __construct($name) {
-    $this->name = $name; 
+    $this->name = $name;
   }
-  
+
   protected function getName() {
     return $this->name;
   }
@@ -287,7 +286,7 @@ public function __construct() {
 
 public function __destruct() {
   // 析构函数
-} 
+}
 ```
 
 用于在特殊时期执行代码,如构造、析构、获取属性等
@@ -297,8 +296,8 @@ public function __destruct() {
 实际开发PHP需要准备开发环境:
 
 - PHP解释器
-- Web服务器(Apache) 
-- MySQL数据库 
+- Web服务器(Apache)
+- MySQL数据库
 - PHP框架(如Laravel)
 - IDE(PhpStorm等)
 

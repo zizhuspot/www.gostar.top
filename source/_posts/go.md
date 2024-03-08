@@ -3,13 +3,12 @@ title: Asynchronous Programming in Go - Harnessing the Power of "Future" and "Pr
 date: 2023-11-14 21:28:28
 categories:
   - Technical section
-tags: 
+tags:
   - Futures
   - Promises
   - Asynchronous Programming
   - Go language
 description: In this comprehensive guide, we'll dive into the asynchronous programming world of the Go language, with a special focus on the use of Futures and Promises.
-cover: https://www.magedu.com/wp-content/uploads/2020/09/5ea652640838e8fc12000675-1.jpg
 ---
 
 ## Introduction
@@ -69,7 +68,7 @@ In complex applications, we often encounter scenarios where multiple asynchronou
 future1 := fetchData("https://api.example.com/data1")
 future2 := future1.Then(func(data1 interface{}) interface{} {
   // Handle data1 and return a new Future
-  return fetchData("https://api.example.com/data2") 
+  return fetchData("https://api.example.com/data2")
 })
 ```
 
@@ -82,7 +81,7 @@ When dealing with asynchronous operations, it is essential to handle errors effe
 ```go
 future := fetchData("https://api.example.com/data")
 future.OnError(func(err error) {
-  // Handle the error  
+  // Handle the error
 })
 ```
 
@@ -104,7 +103,7 @@ future1 := fetchData("https://api.example.com/data1")
 future2 := fetchData("https://api.example.com/data2")
 
 combinedFuture := futures.All(future1, future2)
-result, err := combinedFuture.Get() 
+result, err := combinedFuture.Get()
 ```
 
 In this example, the "combinedFuture" will only complete when both "future1" and "future2" are resolved.

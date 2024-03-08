@@ -11,7 +11,6 @@ tags:
   - html
   - css
 description: 在本文中,我们将深入研究HTML和CSS各自的角色,检查它们互补的本质,并突出它们在Web开发领域的重要性。
-cover: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2x_z9ynfFK03HkLmiGXkPmyS26NqPY_UYGBvklY82aj0N-8oPZDDw7IiIXOoE9v816aE&usqp=CAU
 ---
 
 ## HTML与CSS简介
@@ -78,7 +77,7 @@ HTML和CSS是一支团队。 HTML标签为元素提供意义,CSS选择器则针�
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="styles.css"> 
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -101,16 +100,16 @@ HTML和CSS是一支团队。 HTML标签为元素提供意义,CSS选择器则针�
       font-family: Roboto, sans-serif;
       background-color: #f2f2f2;
     }
-    
+
     h1 {
       color: #ff6600;
     }
-    
+
     p {
       font-size: 16px;
-      line-height: 1.6; 
+      line-height: 1.6;
     }
-    
+
     .highlight {
       background-color: yellow;
     }

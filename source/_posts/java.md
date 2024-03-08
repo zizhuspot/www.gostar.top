@@ -3,11 +3,10 @@ title: How to Ensure Stable Service Call Availability in Java Projects
 date: 2023-12-14 20:28:28
 categories:
   - Technical section
-tags: 
+tags:
   - Java
   - service call
 description: In Java projects, service calls between different components are very common, and there are some problems that may cause the service to be unavailable. This article discusses some common problems and their solutions.
-cover: https://wallpapercave.com/wp/wp7250161.png
 ---
 
 > In Java projects, it is common to have service calls between different components. However, if these calls experience timeouts or if the connection pool configuration is not optimal, it can lead to service unavailability. In this article, we will address these issues and provide solutions to ensure stable and available service calls.

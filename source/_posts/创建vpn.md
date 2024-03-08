@@ -10,19 +10,18 @@ tags:
   - Easy-RSA
   - 安全加密
 description:  在如今信息如潮的时代，许多人都意识到使用VPN（虚拟专用网络）的重要性。VPN可以提供安全的网络连接，保护个人信息免受黑客和监视机构的侵扰。虽然市面上有许多VPN提供商，但套餐都比较贵，这里你可以自己构建一个免费的VPN。本文将向你介绍如何使用开源软件OpenVPN和Easy-RSA搭建自己的免费VPN。
-cover: https://blog.uniquez.co/wp-content/uploads/2020/07/VPN-e1591033060456.jpg
 ---
 
 ## VPN的作用
 
 VPN(虚拟专用网络)可以提供安全加密的网络通道,保护我们的网络访问隐私和数据安全。商业VPN服务往往需要支付高昂的订阅费用。利用OpenVPN我们可以构建低成本免费的自建VPN。
 
-## 搭建OpenVPN服务器的主要步骤 
+## 搭建OpenVPN服务器的主要步骤
 
 下面我们看看使用OpenVPN自建VPN的具体步骤:
 
 - 准备Linux云服务器
-- 安装配置OpenVPN服务和Easy-RSA  
+- 安装配置OpenVPN服务和Easy-RSA
 - 生成证书、密钥、TLS验证文件
 - 配置服务端的openvpn配置文件
 - 设置Linux防火墙规则
@@ -78,7 +77,7 @@ sudo ./easyrsa init-pki
 
 ```
 sudo ./easyrsa build-ca
-sudo ./easyrsa gen-req server nopass 
+sudo ./easyrsa gen-req server nopass
 sudo ./easyrsa sign-req server server
 ```
 
@@ -90,7 +89,7 @@ sudo ./easyrsa sign-req server server
 
 ```
 port 1194
-proto tcp 
+proto tcp
 dev tun
 ca /etc/openvpn/easy-rsa/pki/ca.crt
 cert /etc/openvpn/easy-rsa/pki/issued/server.crt
@@ -157,7 +156,7 @@ sudo ./easyrsa sign-req client client
 
 ```
 client
-dev tun  
+dev tun
 proto udp
 remote your_server_ip 1194
 resolv-retry infinite

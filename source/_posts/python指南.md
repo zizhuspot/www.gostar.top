@@ -11,7 +11,6 @@ tags:
   - 文本分割
   - 语言模型
 description: 本文介绍了LangChain这个强大的NLP Python库,它可以让我们创建和分析语言模型和智能代理。
-cover: https://assets.zilliz.com/Conversational_Memory_in_Lang_Chain_7c1b4b7ba9.png
 ---
 
 ## 引言
@@ -93,7 +92,7 @@ import os
 os.environ["OPENAI_API_KEY"] = "YOUR_OPENAI_API_KEY"
 
 agent = create_csv_agent(
-    OpenAI(temperature=0), 
+    OpenAI(temperature=0),
     "netflix_titles.csv",
     verbose=True,
     agent_type=AgentType.ZERO_SHOT_REACT_DESCRIPTION,
@@ -155,7 +154,7 @@ print(llm("为Matt Nikonorov想一个说唱艺名"))
 
 如上所示,它使用gpt-3.5-turbo模型根据提供的输入("为Matt Nikonorov想一个说唱艺名")生成输出。在这个例子中,我将温度设置为0.9,以使LLM更具创造力。它给出的答案是"MC MegaMatt"。我会给它9分(满分10分)。
 
-### 聊天模型 
+### 聊天模型
 
 LLM模型生成说唱名字很有趣,但如果我们想要更复杂的答案和对话,就需要使用聊天模型,它比语言模型在技术上有所不同。用LangChain文档的话来说:
 
@@ -196,7 +195,7 @@ print(chat(messages))
 from langchain.embeddings import OpenAIEmbeddings
 
 embeddings_model = OpenAIEmbeddings()
-embedded_query = embeddings_model.embed_query("谁创造了万维网?") 
+embedded_query = embeddings_model.embed_query("谁创造了万维网?")
 embedded_query[:5]
 ```
 
@@ -208,7 +207,7 @@ embedded_query[:5]
 
 ```
 text
-"Robert Wadlow是有史以来最高的人"  
+"Robert Wadlow是有史以来最高的人"
 "布尔嘉利发起是最高的摩天大楼"
 "玫瑰是红色的"
 ```
@@ -227,7 +226,7 @@ embeddings_model = OpenAIEmbeddings()
 df = pd.read_csv("embs.csv")
 
 # 对每个信息生成嵌入
-emb1 = embeddings_model.embed_query(df["text"][0])  
+emb1 = embeddings_model.embed_query(df["text"][0])
 emb2 = embeddings_model.embed_query(df["text"][1])
 emb3 = embeddings_model.embed_query(df["text"][2])
 emb_list = [emb1, emb2, emb3]
@@ -237,7 +236,7 @@ embedded_question = embeddings_model.embed_query("有史以来最高的人是谁
 df["similarity"] = df.embedding.apply(lambda x: cosine_similarity(x, embedded_question)) # 找到每个数据片段与问题的相关性
 df.to_csv("embs.csv")
 df2 = df.sort_values("similarity", ascending=False) # 根据与问题的关联性对信息片段进行排序
-print(df2["text"][0]) 
+print(df2["text"][0])
 ```
 
 如果运行此代码,将会得到"Robert Wadlow是有史以来最高的人"作为输出。这段代码通过获取每个信息片段的嵌入并找到与问题"有史以来最高的人是谁?"嵌入最相关的那个来找到正确的答案。嵌入的威力!
@@ -264,7 +263,7 @@ texts = text_splitter.split_text(your_text)
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 text_splitter = RecursiveCharacterTextSplitter(
     chunk_size=2000,
-    chunk_overlap=250, 
+    chunk_overlap=250,
     length_function=len,
     add_start_index=True,
 )
@@ -298,7 +297,7 @@ prompt = PromptTemplate(
 chain = LLMChain(llm=llm, prompt=prompt)
 print(chain.run({
     'media': "恐怖电影",
-    'topic': "数学"  
+    'topic': "数学"
 }))
 ```
 
@@ -328,13 +327,13 @@ json_schema = {
     "type": "object",
     "properties": {
         "name": {"title": "Name", "description": "The artist's name", "type": "string"},
-        "genre": {"title": "Genre", "description": "The artist's music genre", "type": "string"}, 
+        "genre": {"title": "Genre", "description": "The artist's music genre", "type": "string"},
         "debut": {"title": "Debut", "description": "The artist's debut album", "type": "string"},
         "debut_year": {"title": "Debut_year", "description":
         ```python
         "Year of artist's debut album", "type": "integer"}
     },
-    "required": ["name", "genre", "debut", "debut_year"], 
+    "required": ["name", "genre", "debut", "debut_year"],
 }
 
 chain = create_structured_output_chain(json_schema, llm, prompt, verbose=False)
@@ -347,7 +346,7 @@ print(chain.run(artist_info))
 
 - 艺术家的名字
 - 艺术家的音乐风格
-- 艺术家的首张专辑  
+- 艺术家的首张专辑
 - 艺术家的首张专辑发行年份
 
 在提示中,我们还指定“确保以正确的格式回答”,以便始终以JSON格式获取输出。这是该代码的输出:
@@ -384,7 +383,7 @@ print(llm_chain.run(question))
 上面的代码输出如下:
 
 ```
-The answer is Novak Djokovic was born on May 22, 1987. 
+The answer is Novak Djokovic was born on May 22, 1987.
 
 Novak Djokovic is a Serbian tennis player.
 ```

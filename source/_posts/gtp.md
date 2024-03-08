@@ -11,7 +11,6 @@ tags:
   - 游戏世界
   - AI模型
 description: GPT-4作为新一代自然语言生成模型,为游戏开发带来了许多新的可能。本文将探讨如何利用GPT-4的新功能来创建更深入更具沉浸感的游戏世界。
-cover: https://pic1.zhimg.com/v2-3357d933928a78fe51922142c4b2e736_720w.jpg?source=172ae18b1
 ---
 
 ## GPT-4 在游戏开发中的能力
@@ -29,7 +28,7 @@ GPT-4自动生成的语言更加自然流畅,具备人类语言的细微特性�
 GPT-4可以轻松设计出面部表情、社交互动、决策系统等复杂NPC行为。开发者只需要提供关键词提示,GPT-4就可以生成逼真的对话内容:
 
 ````
-player: Hello there! 
+player: Hello there!
 npc: Welcome to our village, weary traveler! How may I be of assistance?
 ````
 
@@ -46,7 +45,7 @@ npc: Welcome to our village, weary traveler! How may I be of assistance?
 ````
 // 输入
 characters: young knight, king
-location: ancient castle  
+location: ancient castle
 goal: find the lost crown
 
 // GPT-4生成
@@ -61,7 +60,7 @@ GPT-4生成的文本可为每个玩家打造个性化的游戏体验。我们可
 
 ````
 // 玩家偏好交友、和平
-npc: Hello friend, let's work together on this! 
+npc: Hello friend, let's work together on this!
 
 // 玩家偏好冒险、行动
 npc: This looks dangerous, but where's the fun without a little risk?
@@ -79,7 +78,7 @@ npc: This looks dangerous, but where's the fun without a little risk?
 // 选择1:送花给公主
 // 选择2:偷走国王冠冕
 // GPT-4生成
-After your romantic gestures, the princess seems smitten with you. But stealing the crown has drawn the ire of the king... 
+After your romantic gestures, the princess seems smitten with you. But stealing the crown has drawn the ire of the king...
 ```
 
 将GPT-4与游戏数据相结合,开发者可以打造无限动态的游戏世界。
@@ -111,7 +110,7 @@ Player: 我要去一个很远的地方。
 
 GPT-4: 去远方探险吗?记得准备充足的补给和装备。旅途中保重安全。
 
-Player: 我要去找我的家人。 
+Player: 我要去找我的家人。
 
 GPT-4: 家人是最重要的。一路顺风,也许我们还能再见面。
 ```
@@ -126,7 +125,7 @@ GPT-4甚至可以学习不同角色的语言风格,使每个NPC都有自己独�
 // 输入关键词
 personality: cruel, mysterious
 ability: dark magic
-appearance: ghostly figure in a dark robe  
+appearance: ghostly figure in a dark robe
 
 // GPT-4生成
 You come across a silent specter hovering over the stone floor. As you approach cautiously, it turns and you catch a glimpse of a gaunt face half-hidden in the shadows of its hood. In a bone-chilling voice it hisses, "I am Malaxius the Conjurer. You shall regret setting foot here!"

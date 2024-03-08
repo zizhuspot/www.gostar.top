@@ -11,7 +11,6 @@ tags:
   - 完整性
   - 隐私
 description: 跨域资源共享(Cross-Origin Resource Sharing, CORS)是现代网络开发中保证不同域之间安全、受控通信的重要机制。本文将深入探讨CORS的复杂性，揭示其内部工作原理，并探索它如何保护不同网络域之间交换的数据的完整性和隐私。
-cover: https://miro.medium.com/max/1130/1*-w04uC0DgFnzUgoKHMRvUA.png
 ---
 
 ## 了解跨域请求
@@ -53,7 +52,7 @@ async function sendCORSRequest() {
 
     const response = await fetch('http://api.domain-b.com/data', {
 
-      method: 'GET',  
+      method: 'GET',
 
       headers: {
 
@@ -88,13 +87,13 @@ async function sendCORSRequest() {
 app.get('/data', (req, res) => {
 
   const allowedOrigins = ['https://app.domain-a.com'];
-  
+
   const origin = req.headers.origin;
 
   if (allowedOrigins.includes(origin)) {
 
     res.header('Access-Control-Allow-Origin', origin);
-    
+
     res.status(200);
 
   } else {
@@ -132,14 +131,14 @@ async function fetchData() {
   try {
 
     const resp = await fetch('http://api.domain-b.com/data');
-    
+
     const data = await resp.json();
 
   } catch(e) {
 
     console.log(e);
 
-  } 
+  }
 
 }
 ````
@@ -152,7 +151,7 @@ async function fetchData() {
 
 当接收到响应后,浏览器会检查头信息:
 
-- Access-Control-Allow-Origin 
+- Access-Control-Allow-Origin
 - Access-Control-Allow-Methods
 
 如果响应头没有正确的CORS信息,浏览器将拒绝此次跨域请求。
@@ -233,4 +232,3 @@ Access-Control-Allow-Headers
 - CORS为不同域间的数据交换建立了可控的安全通道,有效防止了数据泄露或被非法访问的风险。
 
 CORS为跨域请求添加了必要的验证,使跨源网络通信更安全、简单且私密。它已成为现代Web应用必备的安全基石,值得每一位开发者投入时间去深入理解。
-

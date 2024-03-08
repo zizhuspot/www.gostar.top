@@ -11,7 +11,6 @@ tags:
   - 程序
   - 服务
 description: 本方法也适用于其他Windows版本,不过这里将以Windows 11为例进行演示。
-cover: https://www.meiqiantu.com/wp-content/uploads/2023/01/20230131-v1swv_.jpeg
 ---
 
 > 为了确保Python程序在Windows系统上正确执行，必须验证Python是否正确安装并添加到环境变量中。本指南将概述确认系统上是否存在 Python 的步骤，并提供在 Windows 上安装 Python 的详细说明。
@@ -32,8 +31,8 @@ cover: https://www.meiqiantu.com/wp-content/uploads/2023/01/20230131-v1swv_.jpeg
 
 可能表示:您的电脑上未安装Python,Python目录未添加到路径中,这时就需要按照下面的步骤安装Python。
 
- ## 步骤 2：在 Windows 上安装 Python 首先，您需要访问 Python 官方网站的下载页面：！ 
-[Python官方网站](https://www.python.org/) 
+ ## 步骤 2：在 Windows 上安装 Python 首先，您需要访问 Python 官方网站的下载页面：！
+[Python官方网站](https://www.python.org/)
 
 ![](https://s2.loli.net/2023/07/31/9cVQtI3reZMhHBd.png)
 
@@ -120,4 +119,3 @@ cover: https://www.meiqiantu.com/wp-content/uploads/2023/01/20230131-v1swv_.jpeg
 ## 结语
 
 按照上述步骤操作，您现在已在计算机上安装了 Python。您现在可以选择任何适合Python的IDE，并开始编写和执行Python代码。
-

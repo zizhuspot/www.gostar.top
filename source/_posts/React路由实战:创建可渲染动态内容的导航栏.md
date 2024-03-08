@@ -11,7 +11,6 @@ tags:
   - 应用
   - 程序
 description: 掌握了React Router的使用,可以让我们更便捷地构建包含导航、动态渲染页面的React单页应用
-cover: https://miro.medium.com/v2/resize:fit:1400/format:webp/1*vHHBwcUFUaHWXntSnqKdCA.png
 ---
 
 ## 引言
@@ -101,7 +100,7 @@ function App() {
   <Route path="/" element={<Home />} />
 
   <Route path="/about" element={<About />} />
-  
+
   <Route path="/contact" element={<Contact />} />
 
 </Routes>
@@ -137,7 +136,7 @@ function Home() {
 }
 
 function About() {
-  return <h1>About</h1>; 
+  return <h1>About</h1>;
 }
 
 function Contact() {

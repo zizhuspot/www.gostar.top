@@ -11,7 +11,6 @@ tags:
   - 代码
   - 语法错误
 description: 在本文中,我们将学习如何处理Python中的错误和异常,这被称为“异常处理”。
-cover: https://th.bing.com/th/id/OIP.0MubpYCQxXibVUGvsVGCjAHaDb?pid=ImgDet&rs=1
 ---
 
 ## 引言
@@ -35,8 +34,8 @@ Python与其他编程语言一样,都有处理执行过程中发生的异常的�
 Python有一系列内置异常用于处理不同的异常情况。下面是一些内置的Python异常:
 
 1. Exception - 所有自定义异常也应该派生自这个类
-2. ArithmeticError - 由各种算术错误引发的内置异常的基类  
-3. AssertionError - assert语句失败时引发 
+2. ArithmeticError - 由各种算术错误引发的内置异常的基类
+3. AssertionError - assert语句失败时引发
 4. AttributeError - 属性引用或赋值失败时引发
 5. ImportError - 导入语句加载模块时遇到问题时引发
 6. IndexError - 当序列下标超出范围时引发
@@ -53,7 +52,7 @@ try和except块用于Python中的异常处理。语法形式如下:
 try:
     # 可能引发异常的代码
 except:
-    # 处理异常的代码 
+    # 处理异常的代码
 ```
 
 try块包含可能引发异常的代码部分,except块包含处理异常的代码。
@@ -68,13 +67,13 @@ print(3/0)
 
 ```
 ZeroDivisionError: division by zero
-``` 
+```
 
 可以通过下面的方式来处理这行可能抛出异常的代码:
 
 ```
 try:
-    print(3/0)  
+    print(3/0)
 except ZeroDivisionError:
     print("不能除以零")
 ```
@@ -87,12 +86,12 @@ except ZeroDivisionError:
 
 ```
 try:
-    number = 'one' 
+    number = 'one'
     print(number + 1)
 except TypeError:
     print("不能连接字符串和整数")
 except NameError:
-    print("名称未定义") 
+    print("名称未定义")
 ```
 
 上面代码的输出是:
@@ -107,7 +106,7 @@ except NameError:
 
 ```
 try:
-   # 代码  
+   # 代码
 except:
    # 代码
 
@@ -122,7 +121,7 @@ except:
 
 有时在我们的Python程序中,我们可能想在某些条件不匹配我们要求时使用raise关键字引发异常。raise语句由关键字本身、异常实例和可选参数组成。
 
-## else子句 
+## else子句
 
 else子句可以添加到标准的try和except块中。它放在except子句之后。else子句包含如果try语句没有引发异常时我们想执行的代码。
 
@@ -139,7 +138,7 @@ finally子句可以添加到try和except块中,并在必要时使用。finally�
 ```
 class CustomException(Exception):
     pass
-    
+
 try:
     pass
 except CustomException:

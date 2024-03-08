@@ -11,8 +11,7 @@ tags:
   - 移动应用
   - Android
 description: 跨平台应用开发一直是app开发者梦寐以求的方向。本文将详细介绍如何使用React Native开发跨平台APP,让你快速上手这项强大的技术。
-cover: https://www.hammermarketing.com/wp-content/uploads/sites/2/2020/11/react-native_large.jpg?resize=1200,630
----                                                                                          
+---
 
 > React Native让移动应用开发变得简单,程序员可以通过构建跨平台应用实现代码复用和效率。本详尽指南将向你全面介绍React Native的学习过程,使你能够开发功能丰富、高质量的移动应用,无缝运行在iOS和Android设备上。
 
@@ -81,7 +80,7 @@ const styles = StyleSheet.create({
 
 });
 
-export default App; 
+export default App;
 ```
 ````
 
@@ -104,7 +103,7 @@ import { View, Text, StyleSheet } from 'react-native';
 const App = () => {
   return (
     <View style={styles.container}>
-      <Text>Welcome to My React Native App!</Text> 
+      <Text>Welcome to My React Native App!</Text>
     </View>
   );
 };
@@ -129,7 +128,7 @@ const styles = StyleSheet.create({
 4. 导出组件:
 
 ```
-export default App; 
+export default App;
 ```
 
 最后导出App组件。
@@ -153,7 +152,7 @@ const UserProfile = () => {
     <View style={styles.container}>
 
       <Image
-        style={styles.avatar} 
+        style={styles.avatar}
         source={{uri: 'https://example.com/avatar.png'}}
       />
 
@@ -176,7 +175,7 @@ const styles = StyleSheet.create({
   },
 
   avatar: {
-    width: 100, 
+    width: 100,
     height: 100,
     borderRadius: 50,
   },
@@ -204,7 +203,7 @@ export default UserProfile;
 1. 导入组件
 
 ```
-import React from 'react'; 
+import React from 'react';
 import { View, Text, Image, StyleSheet } from 'react-native';
 ```
 
@@ -221,7 +220,7 @@ import { View, Text, Image, StyleSheet } from 'react-native';
 - container居中
 - avatar 设置图片大小和圆角
 - name 设置字号加粗
-- bio 设置字号和颜色 
+- bio 设置字号和颜色
 
 4. 导出组件
 
@@ -252,9 +251,9 @@ const AppHeader = () => {
   return (
 
     <View style={styles.header}>
-    
+
       <Text style={styles.title}>My Awesome App</Text>
-    
+
     </View>
 
   );
@@ -266,14 +265,14 @@ const styles = StyleSheet.create({
   header: {
     height: 80,
     paddingTop: 30,
-    backgroundColor: '#007BFF', 
+    backgroundColor: '#007BFF',
     alignItems: 'center',
     justifyContent: 'center',
   },
 
   title: {
     fontSize: 24,
-    fontWeight: 'bold', 
+    fontWeight: 'bold',
     color: '#FFF',
   },
 
@@ -301,13 +300,13 @@ import { View, Text, StyleSheet } from 'react-native';
 
 3. 使用StyleSheet设置样式
 
-```js 
+```js
 const styles = StyleSheet.create({
   header: {
     // 样式
   },
   title: {
-   // 样式 
+   // 样式
   }
 })
 ```
@@ -318,7 +317,7 @@ const styles = StyleSheet.create({
 
 设置了高度、padding、背景色、水平垂直居中等样式。
 
-5. title样式 
+5. title样式
 
 设置了文字大小、字体加粗、文字颜色等样式。
 
@@ -351,21 +350,21 @@ const LoginForm = () => {
     if (email && password) {
       // 登录逻辑
     } else {
-      // 错误提示 
+      // 错误提示
     }
   };
-  
+
   return (
     <View style={styles.container}>
-    
+
       <TextInput
         style={styles.input}
         placeholder="Email"
         value={email}
-        onChangeText={text => setEmail(text)} 
+        onChangeText={text => setEmail(text)}
       />
 
-      <TextInput 
+      <TextInput
         secureTextEntry
         placeholder="Password"
         value={password}
@@ -382,7 +381,7 @@ const LoginForm = () => {
 const styles = StyleSheet.create({
   // ...样式
 });
-          
+
 export default LoginForm;
 ```
 
@@ -393,7 +392,7 @@ export default LoginForm;
 1. 导入组件和钩子
 
 ```
-import React, { useState } from 'react'; 
+import React, { useState } from 'react';
 import { View, TextInput, Button, Alert, StyleSheet } from 'react-native';
 ```
 
@@ -442,7 +441,7 @@ const handleLogin = () => {
 
 这是一个很好的示例,展示了函数组件的写法,以及如何使用状态钩子和样式,处理用户交互等功能。
 
-## 7. 状态管理和数据获取 
+## 7. 状态管理和数据获取
 
 状态管理在React Native中非常重要。我们将学习useState、useReducer等钩子来有效管理应用状态,并深入研究API数据获取,实现实时数据展示。
 
@@ -457,7 +456,7 @@ const DataFetchingExample = () => {
 
   useEffect(() => {
     // 发起数据请求
-    // 设置数据和loading状态 
+    // 设置数据和loading状态
   }, []);
 
   if(loading) {
@@ -471,7 +470,7 @@ const DataFetchingExample = () => {
   return (
     <View style={styles.container}>
       {data.map(item => (
-        <Text key={item.id}>{item.name}</Text>  
+        <Text key={item.id}>{item.name}</Text>
       ))}
     </View>
   );

@@ -11,7 +11,6 @@ tags:
   - 管理
   - 自动配置
 description: AWS Elastic Beanstalk就是一个帮你快速部署应用的云平台服务,开发者无需操心基础设施即可上线应用。这极大地降低了应用部署和管理的学习成本。你只需关注应用代码本身,将底层基础架构交给Elastic Beanstalk自动配置。
-cover: https://codesandchips.files.wordpress.com/2022/03/aws-elastic-beanstalk.jpg
 ---
 
 > 本教程将介绍AWS Elastic Beanstalk的基础知识,这是亚马逊网络服务提供的一个平台即服务产品。我们将学习如何使用Elastic Beanstalk来部署、管理和扩展应用程序。
@@ -115,7 +114,7 @@ eb create my-env
 Elastic Beanstalk提供了几种管理和监控应用程序的工具。下面是一些常见任务:
 
 - 查看环境状态:`eb status`
-- 查看应用日志:`eb logs` 
+- 查看应用日志:`eb logs`
 - 更新应用程序:做出代码更改,运行`eb deploy`部署更新版本
 - 监控应用程序:Elastic Beanstalk会自动监控应用程序并将指标发送到Amazon CloudWatch。可以在Elastic Beanstalk控制台或CloudWatch控制台中查看这些指标。
 
@@ -174,7 +173,7 @@ phases:
   install:
     commands:
       - npm install
-  build: 
+  build:
     commands:
       - npm run build
   post_build:
@@ -199,5 +198,3 @@ aws rds create-db-snapshot \
 ## 总结
 
 本教程介绍了AWS Elastic Beanstalk的基础知识,包括如何创建、部署、管理和扩展应用程序等。Elastic Beanstalk是一个强大且灵活的平台,可以轻松在AWS云中构建和运行应用程序。
-
-

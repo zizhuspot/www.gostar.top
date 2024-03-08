@@ -9,7 +9,6 @@ tags:
   - 高级
   - python
 description: 通过简单的图文来帮大家快速了解如何开始使用Python。让我们一起开启编程之旅吧!
-cover: https://www.analyticsinsight.net/wp-content/uploads/2022/03/Python-Remains-at-the-Top-Despite-the-Intro-of-New-Coding-Langs.jpg
 ---
 
 ## python简介
@@ -37,7 +36,7 @@ Python有两个主要版本:Python 2和Python 3,建议安装最新的Python 3。
 有了环境,我们就可以开始编程了。首先来个最简单的Hello World程序,在PyCharm中输入:
 
 ```python
-print("Hello World!") 
+print("Hello World!")
 ```
 
 然后点击运行,就可以在下方控制台看到打印出的Hello World!
@@ -59,13 +58,13 @@ Python是一种广泛使用的解释型、面向对象的高级程序设计语�
 
 Python作为一门简单易用又功能强大的编程语言,是学习编程和进行软件开发的不错选择。
 
-## 学习基础语法 
+## 学习基础语法
 
 掌握了最基本的打印,我们开始学习一些Python的基础语法。比如定义变量:
 
 ```python
 name = "小明"
-age = 18 
+age = 18
 ```
 
 流程控制:
@@ -74,7 +73,7 @@ age = 18
 if age >= 18:
     print("成年人")
 else:
-    print("未成年")  
+    print("未成年")
 ```
 
 函数:
@@ -96,22 +95,22 @@ sayHi("小红")
 
 ```python
 # 变量
-name = "John" 
+name = "John"
 
 # 判断
 if age > 18:
   print("成年")
 else:
   print("未成年")
-  
-# 循环  
+
+# 循环
 for i in range(5):
   print(i)
 
 # 函数
 def sayHi(name):
   print("Hi " + name)
-  
+
 sayHi("John")
 ```
 
@@ -132,7 +131,7 @@ nums = [1, 2, 3]
 nums.append(4)
 
 # 字典
-person = {"name": "John", "age": 20} 
+person = {"name": "John", "age": 20}
 person["name"] = "Mary"
 ```
 
@@ -141,9 +140,9 @@ person["name"] = "Mary"
 ```python
 with open("file.txt") as f:
   content = f.read()
-  
-with open("file.txt", "w") as f: 
-  f.write("Hello world!") 
+
+with open("file.txt", "w") as f:
+  f.write("Hello world!")
 ```
 
 5. 异常处理
@@ -181,14 +180,14 @@ print(mylist[0]) # 通过索引访问元素
 
 列表切片:
 
-```python 
+```python
 print(mylist[1:3]) # 前闭后开切片
-``` 
+```
 
 列表推导式:
 
 ```python
-newlist = [i*2 for i in mylist] 
+newlist = [i*2 for i in mylist]
 # 遍历mylist每个元素做操作
 ```
 
@@ -197,7 +196,7 @@ newlist = [i*2 for i in mylist]
 元组的定义与访问:
 
 ```python
-mytuple = (1, 2, 3) 
+mytuple = (1, 2, 3)
 
 print(mytuple[0]) # 访问元组元素
 ```
@@ -216,7 +215,7 @@ mytuple[0] = 4 # 错误,元组不可变
 mydict = {"name":"John", "age":20} # 字典
 ```
 
-访问元素: 
+访问元素:
 
 ```python
 mydict["name"] # 使用键访问
@@ -261,16 +260,16 @@ f"Hello {name}" # f-string格式化
 
 读取文件:
 
-```python 
+```python
 file = open("test.txt", "r")
 content = file.read() # 读取文件内容
-file.close() 
+file.close()
 ```
 
 写入文件:
 
 ```python
-file = open("test.txt", "w") 
+file = open("test.txt", "w")
 file.write("Hello World") # 写入内容
 file.close()
 ```
@@ -300,7 +299,7 @@ class Student(Person):
 ```python
 class Student(Person):
   def __init__(self, name, age, school):
-    super().__init__(name, age) 
+    super().__init__(name, age)
     self.school = school
 ```
 
@@ -323,7 +322,7 @@ def sayHi(name):
   print(f"Hi {name}")
 
 # 使用模块
-import mymodule 
+import mymodule
 
 mymodule.sayHi("John")
 ```
@@ -341,7 +340,7 @@ pip install pandas
 ```python
 import pandas as pd
 
-pd.DataFrame() 
+pd.DataFrame()
 ```
 
 ## 总结

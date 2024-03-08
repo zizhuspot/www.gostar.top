@@ -10,7 +10,6 @@ tags:
   - 功能
   - 初学者
 description:  C++是一种通用的编程语言,拥有高性能、高扩展性等优点,在游戏、操作系统、企业应用等开发中广泛使用。本教程将介绍C++的基础语法和功能,帮助初学者学习C++编程。
-cover: https://images5.alphacoders.com/430/430890.jpg
 ---
 
 ## C++基础
@@ -25,7 +24,7 @@ C++是一种通用的编程语言,由Bjarne Stroustrup于1979年在C语言基础
 using namespace std; // 使用std命名空间
 
 int main() { // 主函数
-  cout << "Hello World!"; // 输出 
+  cout << "Hello World!"; // 输出
   return 0; // 返回值0表示正常退出
 }
 ```
@@ -72,7 +71,7 @@ if语句、循环:
 if (a > b) {
   // todo
 } else if {
-  // todo 
+  // todo
 } else {
   // todo
 }
@@ -91,19 +90,19 @@ for (int i=0; i<10; i++) {
 ```cpp
 class Person {
 public:
-  string name; 
+  string name;
   int age;
-  
+
   void printInfo() {
     // todo
   }
 };
-``` 
+```
 
 创建对象:
 
 ```cpp
-Person p1; 
+Person p1;
 p1.name = "John";
 p1.age = 20;
 ```
@@ -120,10 +119,10 @@ p1.age = 20;
 
 ## C++数组和字符串
 
-定义数组: 
+定义数组:
 
 ```cpp
-int nums[10]; 
+int nums[10];
 
 string strs[2] = {"hello","world"};
 ```
@@ -150,9 +149,9 @@ int add(int a, int b) {
 
 内联函数:
 
-```cpp 
+```cpp
 inline int add(int a, int b) {
-  return a + b; 
+  return a + b;
 }
 ```
 
@@ -163,7 +162,7 @@ inline int add(int a, int b) {
 ```cpp
 template <typename T>
 T min(T a, T b) {
-  return a < b ? a : b; 
+  return a < b ? a : b;
 }
 ```
 
@@ -172,7 +171,7 @@ T min(T a, T b) {
 ```cpp
 template <class T>
 class Stack {
-  // 栈实现 
+  // 栈实现
 };
 ```
 
@@ -186,12 +185,12 @@ try {
 } catch (Exception e) {
   // 处理异常
 }
-``` 
+```
 
 抛出异常:
 
 ```cpp
-throw Exception("Error occurred"); 
+throw Exception("Error occurred");
 ```
 
 ## C++文件操作
@@ -235,7 +234,7 @@ mylist.pop_front();
 
 Map字典:
 
-```cpp 
+```cpp
 map<string, int> dict;
 dict["key"] = 1;
 dict["key"]; // 访问元素

@@ -11,7 +11,6 @@ tags:
   - 优势
   - 关键步骤
 description: 本文将指导您在React前端应用中实现用户注册和邮箱验证的过程。邮箱验证是确保用户账户真实性和防止垃圾或欺诈性注册的关键步骤。
-cover: https://th.bing.com/th/id/OIP.09pzWMCF_zYyIFCkx5bMygHaCo?pid=ImgDet&rs=1
 ---
 
 > 在构建需要用户注册功能的Web应用时,验证用户邮箱的真实性是非常关键的一步。本文将以 coding 的视角,结合实例代码,分享在React应用中实现用户注册与邮箱验证的具体实践流程。
@@ -31,12 +30,12 @@ export default function EmailVerify() {
 
   return (
     <div>
-      <input 
+      <input
         value={email}
         onChange={e => setEmail(e.target.value)}
       />
       <button onClick={() => sendVerifyEmail(email)}>
-        发送验证邮件  
+        发送验证邮件
       </button>
     </div>
   )
@@ -80,7 +79,7 @@ export default function VerifyEmail() {
   const token = new URLSearchParams(location.search).get('token');
 
   useEffect(() => {
-    
+
     const verify = async () => {
       try {
         await axios.post('/api/verify-email', { token });
@@ -111,7 +110,7 @@ export default function VerifyEmail() {
 export default function VerifyFail() {
   return (
     <div>
-      <p>邮箱验证失败!</p> 
+      <p>邮箱验证失败!</p>
       <button>重新发送验证邮件</button>
     </div>
   );
@@ -128,21 +127,21 @@ export default function VerifyFail() {
 useEffect(() => {
 
   const verify = async () => {
-    
+
     try {
       await axios.post('/api/verify-email', { token });
-      
+
     } catch(err) {
-    
+
       // 处理网络异常
       if(err.response) {
         // 请求成功发出但服务端返回状态码非2xx的响应
       } else if (err.request) {
         // 请求发出但无响应返回
-      } else { 
+      } else {
         // 在设置请求时发生错误
       }
-      
+
     }
   };
 
@@ -167,9 +166,9 @@ useEffect(() => {
 const handleSubmit = async (email, password) => {
 
   await axios.post('/api/register', { email, password });
-  
+
   // 直接调用发送验证邮件
-  await sendVerifyEmail(email); 
+  await sendVerifyEmail(email);
 
 };
 ```
@@ -179,11 +178,3 @@ const handleSubmit = async (email, password) => {
 ## 结语
 
 通过以上实例,我们了解了在React应用中实现用户注册与邮箱验证的主要代码逻辑和设计模式。邮箱验证在很多Web应用中都是必不可少的重要功能,利用React的优势可以使我们的验证流程代码更加清晰、准确。
-
-
-
-
-
-
-
-

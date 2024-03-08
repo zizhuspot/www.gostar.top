@@ -9,7 +9,6 @@ tags:
   - 高级
   - jsp
 description: JSP简化了动态网页的开发,通过其组件化的特性,可以快速高效地开发数据库驱动的Web应用。它是很多Java Web项目的首选。
-cover: https://beingfayanvideo.files.wordpress.com/2019/09/images49.jpg
 ---
 
 ## 什么是Java Server Pages?
@@ -60,7 +59,7 @@ JSP页面文件扩展名为`.jsp`。一个示例页面:
   <body>
     <%
       String name = "John";
-      out.println("Hello " + name); 
+      out.println("Hello " + name);
     %>
   </body>
 </html>
@@ -82,7 +81,7 @@ JSP页面文件扩展名为`.jsp`。一个示例页面:
 <%
    double num1 = 5.5;
    double num2 = 4.5;
-   double sum = num1 + num2; 
+   double sum = num1 + num2;
 %>
 ```
 
@@ -111,7 +110,7 @@ JSP页面文件扩展名为`.jsp`。一个示例页面:
 
 5. include指令
 
-```jsp 
+```jsp
 <%@ include file="header.jsp"%>
 ```
 
@@ -177,7 +176,7 @@ Webster、Eclipse等IDE都支持JSP开发。
 使用JSP表达式输出当前时间:
 
 ```jsp
-<%@ page import="java.util.Date" %>  
+<%@ page import="java.util.Date" %>
 <%= new Date() %>
 ```
 
@@ -218,7 +217,7 @@ String name = request.getParameter("username");
 使用JDBC API查询数据库:
 
 ```jsp
-<%@ page import="java.sql.*" %> 
+<%@ page import="java.sql.*" %>
 <%
   //查询语句
   ResultSet rs = stmt.executeQuery("SELECT * FROM table");
@@ -249,7 +248,7 @@ String name = request.getParameter("username");
 
 - JSP的工作原理
 - JSP基本语法
-- JSP的开发步骤 
+- JSP的开发步骤
 - 一个JSP代码示例
 - 开发常见使用案列
 
@@ -271,4 +270,3 @@ String name = request.getParameter("username");
 14. 了解jsp文件与类文件之间的关系。
 
 掌握这些基础知识,可以让JSP初学者基本使用JSP开发动态网页和Web应用。当然还需要更多实际项目练习来巩固。
-

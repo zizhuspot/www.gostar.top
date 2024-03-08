@@ -9,7 +9,6 @@ tags:
   - 高级
   - html
 description: HTML是构建网站的基础,如果你想搭建自己的网页,学习HTML是必不可少的。今天简单向大家介绍HTML的基本用法。希望这篇博客可以帮助大家快速上手HTML。
-cover: https://www.freecodecamp.org/news/content/images/size/w2000/2023/03/HTML-Blog-Cover-1.png
 ---
 
 > 欢迎来到HTML入门教程!本文将带您快速了解和学习HTML的基础知识,包括HTML的概念、基础语法、文本格式化、表单等内容。通过学习本教程,您可以掌握构建简单网页的技能。现在就让我们开始吧!
@@ -43,7 +42,7 @@ HTML通过标签来定义不同的元素语义。常见的标签包括heading、
 
 <ul>
   <li>Item 1</li>
-  <li>Item 2</li> 
+  <li>Item 2</li>
 </ul>
 ```
 
@@ -83,13 +82,13 @@ HTML通过标签来定义不同的元素语义。常见的标签包括heading、
 <h1>This is heading 1</h1>
 <h2>This is heading 2</h2>
 ...
-``` 
+```
 
 ### 段落
 
 `<p>`标签用于定义段落:
 
-```html  
+```html
 <p>This is a paragraph.</p>
 ```
 
@@ -100,7 +99,7 @@ HTML通过标签来定义不同的元素语义。常见的标签包括heading、
 ```html
 <ul>
   <li>Item 1</li>
-  <li>Item 2</li> 
+  <li>Item 2</li>
 </ul>
 ```
 
@@ -131,7 +130,7 @@ HTML通过标签来定义不同的元素语义。常见的标签包括heading、
 <table>
   <tr>
     <th>Name</th>
-    <th>Age</th> 
+    <th>Age</th>
   </tr>
   <tr>
     <td>John</td>
@@ -202,7 +201,7 @@ HTML是构建网页的基础,其主要特点如下:
   <header>
     <!-- 头部内容 -->
   </header>
-  
+
   <main>
     <!-- 主体内容 -->
   </main>
@@ -229,7 +228,7 @@ HTML是构建网页的基础,其主要特点如下:
   <title>页面标题</title>
 </head>
 <body>
-  页面内容 
+  页面内容
 </body>
 </html>
 ```
@@ -244,7 +243,7 @@ HTML是构建网页的基础,其主要特点如下:
 3. 文本格式化
 
 ```html
-<b>加粗文本</b>  
+<b>加粗文本</b>
 <i>斜体文本</i>
 <u>带下划线文本</u>
 ```
@@ -271,7 +270,7 @@ HTML是构建网页的基础,其主要特点如下:
 
 6. 列表
 
-```html 
+```html
 <ul>
   <li>无序列表项</li>
 </ul>
